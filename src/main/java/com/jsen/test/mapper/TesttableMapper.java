@@ -1,5 +1,6 @@
 package com.jsen.test.mapper;
 
+import com.baomidou.mybatisplus.annotations.SqlParser;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.jsen.test.entity.Testtable;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
@@ -17,6 +18,9 @@ import java.util.List;
  * @since 2018-03-21
  */
 public interface TesttableMapper extends BaseMapper<Testtable> {
+
+    // 此注解表示不使用多租户
+    @SqlParser(filter = true)
     List<Testtable> selectMy(RowBounds rowBounds, @Param("ew")Wrapper<Testtable> wrapper);
 
     List<Testtable> listAll();
