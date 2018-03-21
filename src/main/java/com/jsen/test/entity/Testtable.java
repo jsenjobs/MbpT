@@ -1,9 +1,11 @@
 package com.jsen.test.entity;
 
+import java.util.Date;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import java.io.Serializable;
 
+import com.baomidou.mybatisplus.annotations.TableLogic;
 import com.baomidou.mybatisplus.annotations.Version;
 
 import lombok.Data;
@@ -20,7 +22,7 @@ import lombok.experimental.Accessors;
  */
 @Data
 @Accessors(chain = true)
-public class User extends Model<User> {
+public class Testtable extends Model<Testtable> {
 
     private static final long serialVersionUID = 1L;
 
@@ -29,6 +31,18 @@ public class User extends Model<User> {
     private String Name;
     @TableField("Sex")
     private String Sex;
+    @TableField("TestInt")
+    private Integer TestInt;
+    @TableField("TestChar")
+    private String TestChar;
+    @TableField("TestNumber")
+    private Float TestNumber;
+    @TableField(value = "Time", update = "now()")
+    private Date Time;
+
+    @TableField(value = "Logical")
+    @TableLogic
+    private Integer Logical;
 
 
     @Override

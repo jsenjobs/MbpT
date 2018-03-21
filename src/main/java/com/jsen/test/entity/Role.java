@@ -4,14 +4,22 @@ import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import java.io.Serializable;
 
+import com.baomidou.mybatisplus.annotations.Version;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.Accessors;
+
 /**
  * <p>
  * 
  * </p>
  *
  * @author jsen
- * @since 2018-03-20
+ * @since 2018-03-21
  */
+@Data
+@Accessors(chain = true)
 public class Role extends Model<Role> {
 
     private static final long serialVersionUID = 1L;
@@ -21,32 +29,9 @@ public class Role extends Model<Role> {
     private Integer Role;
 
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public Integer getRole() {
-        return Role;
-    }
-
-    public void setRole(Integer Role) {
-        this.Role = Role;
-    }
-
     @Override
     protected Serializable pkVal() {
         return this.id;
     }
 
-    @Override
-    public String toString() {
-        return "Role{" +
-        ", id=" + id +
-        ", Role=" + Role +
-        "}";
-    }
 }

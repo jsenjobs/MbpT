@@ -13,7 +13,7 @@ public class GeneratorServiceEntity {
     public void generateCode() {
         String packageName = "com.jsen.test";
         boolean serviceNameStartWithI = false;//user -> UserService, 设置成true: user -> IUserService
-        generateByTables(serviceNameStartWithI, packageName, "user", "role");
+        generateByTables(serviceNameStartWithI, packageName, "user", "role", "testtable");
     }
 
     private void generateByTables(boolean serviceNameStartWithI, String packageName, String... tableNames) {
@@ -28,14 +28,16 @@ public class GeneratorServiceEntity {
         StrategyConfig strategyConfig = new StrategyConfig();
         strategyConfig
                 .setCapitalMode(true)
-                .setEntityLombokModel(false)
+                .setEntityLombokModel(true)
                 .setDbColumnUnderline(true)
                 .setNaming(NamingStrategy.underline_to_camel)
                 .setInclude(tableNames);//修改替换成你需要的表名，多个表名传数组
         config.setActiveRecord(true)
+                .setEnableCache(true)
+                .setBaseResultMap(true)
                 .setAuthor("jsen")
                 .setOutputDir("D:\\Test\\MbpT\\src\\main\\java")
-                .setFileOverride(true);
+                .setFileOverride(false);
         if (!serviceNameStartWithI) {
             config.setServiceName("%sService");
         }

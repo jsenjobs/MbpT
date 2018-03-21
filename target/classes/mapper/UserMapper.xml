@@ -5,4 +5,11 @@
     <!-- 开启二级缓存 -->
     <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
 
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jsen.test.entity.User">
+        <id column="ID" property="id" />
+        <result column="Name" property="Name" />
+        <result column="Sex" property="Sex" />
+    </resultMap>
+
 </mapper>
