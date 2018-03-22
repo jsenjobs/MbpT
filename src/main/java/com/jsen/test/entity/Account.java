@@ -1,6 +1,7 @@
 package com.jsen.test.entity;
 
-import com.baomidou.mybatisplus.annotations.TableField;
+import com.baomidou.mybatisplus.enums.IdType;
+import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.activerecord.Model;
 import java.io.Serializable;
 
@@ -16,19 +17,18 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author jsen
- * @since 2018-03-21
+ * @since 2018-03-22
  */
 @Data
 @Accessors(chain = true)
-public class User extends Model<User> {
+public class Account extends Model<Account> {
 
     private static final long serialVersionUID = 1L;
 
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
-    @TableField("Name")
-    private String Name;
-    @TableField("Sex")
-    private String Sex;
+    private String name;
+    private String sex;
 
 
     @Override

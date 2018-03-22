@@ -11,11 +11,11 @@ import org.springframework.stereotype.Controller;
  * </p>
  *
  * @author jsen
- * @since 2018-03-21
+ * @since 2018-03-22
  */
 @Controller
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/account")
+public class AccountController {
 
 }
 

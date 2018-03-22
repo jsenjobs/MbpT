@@ -1,6 +1,6 @@
 package com.jsen.test.service;
 
-import com.jsen.test.entity.User;
+import com.jsen.test.entity.Account;
 import com.baomidou.mybatisplus.service.IService;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.service.IService;
  * </p>
  *
  * @author jsen
- * @since 2018-03-21
+ * @since 2018-03-22
  */
-public interface UserService extends IService<User> {
+public interface AccountService extends IService<Account> {
 
 }

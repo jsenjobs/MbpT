@@ -34,7 +34,7 @@ public class TesttableServiceImpl extends ServiceImpl<TesttableMapper, Testtable
     public List<Testtable> selectPart() {
         RowBounds rb = new RowBounds(0, 2);
         EntityWrapper<Testtable> ew = new EntityWrapper<>();
-        ew.eq("TestInt", 7);
+        ew.eq("testint", 7);
         return baseMapper.selectMy(rb, ew);
     }
 

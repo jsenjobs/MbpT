@@ -1,11 +1,11 @@
 package com.jsen.test.service;
 
-import com.jsen.test.entity.User;
+import com.jsen.test.entity.Account;
 
 import java.util.List;
 
 public interface TestService {
-    List<User> getAllUser();
+    List<Account> getAllUser();
 
     void TestAll();
 }

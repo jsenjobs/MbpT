@@ -2,13 +2,11 @@ package com.jsen.test.controller;
 
 
 import com.jsen.test.entity.Testtable;
-import com.jsen.test.entity.User;
 import com.jsen.test.service.TesttableService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;

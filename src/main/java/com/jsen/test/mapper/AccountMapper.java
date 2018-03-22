@@ -1,6 +1,6 @@
 package com.jsen.test.mapper;
 
-import com.jsen.test.entity.User;
+import com.jsen.test.entity.Account;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * </p>
  *
  * @author jsen
- * @since 2018-03-21
+ * @since 2018-03-22
  */
-public interface UserMapper extends BaseMapper<User> {
+public interface AccountMapper extends BaseMapper<Account> {
 
 }
