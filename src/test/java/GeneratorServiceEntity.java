@@ -18,7 +18,7 @@ public class GeneratorServiceEntity {
 
     private void generateByTables(boolean serviceNameStartWithI, String packageName, String... tableNames) {
         GlobalConfig config = new GlobalConfig();
-        String dbUrl = "jdbc:mysql://192.168.0.221:2200/jtest001";
+        String dbUrl = "jdbc:mysql://192.168.0.91:2200/jtest001";
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
         dataSourceConfig.setDbType(DbType.MYSQL)
                 .setUrl(dbUrl)
@@ -38,7 +38,7 @@ public class GeneratorServiceEntity {
                 .setAuthor("jsen")
                 .setOutputDir("D:\\Test\\MbpT\\src\\main\\java")
                 .setOutputDir("/Users/jsen/Gen")
-                .setFileOverride(false);
+                .setFileOverride(true);
         if (!serviceNameStartWithI) {
             config.setServiceName("%sService");
         }

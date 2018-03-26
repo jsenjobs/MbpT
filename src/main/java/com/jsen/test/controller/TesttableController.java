@@ -4,6 +4,7 @@ package com.jsen.test.controller;
 import com.jsen.test.entity.Testtable;
 import com.jsen.test.service.TesttableService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -22,6 +23,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/testtable")
+@CrossOrigin
 public class TesttableController {
 
     @Autowired

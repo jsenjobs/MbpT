@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.activerecord.Model;
 import java.io.Serializable;
+import java.util.Date;
 
 import com.baomidou.mybatisplus.annotations.Version;
 
@@ -13,11 +14,11 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author jsen
- * @since 2018-03-22
+ * @since 2018-03-23
  */
 @Data
 @Accessors(chain = true)
@@ -29,6 +30,8 @@ public class Account extends Model<Account> {
     private Integer id;
     private String name;
     private String sex;
+    private String password;
+    private Date lastlogin;
 
 
     @Override
