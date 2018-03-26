@@ -1,7 +1,6 @@
 package com.jsen.test.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.jsen.test.entity.Account;
 import com.jsen.test.mapper.AccountMapper;
 import com.jsen.test.service.AccountService;

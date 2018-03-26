@@ -1,6 +1,7 @@
 package com.jsen.test.service.impl;
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import com.google.common.collect.Maps;
 import com.jsen.test.entity.Testtable;
 import com.jsen.test.mapper.TesttableMapper;
 import com.jsen.test.service.TesttableService;
@@ -8,7 +9,6 @@ import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.apache.ibatis.session.RowBounds;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -56,7 +56,7 @@ public class TesttableServiceImpl extends ServiceImpl<TesttableMapper, Testtable
 
     @Override
     public Map<String, Object> delete(int id) {
-        Map<String, Object> result = new HashMap<>();
+        Map<String, Object> result = Maps.newHashMap();
         result.put("effect", baseMapper.deleteById(id));
         return result;
     }
