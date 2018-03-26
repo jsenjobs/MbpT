@@ -13,17 +13,17 @@ public class GeneratorServiceEntity {
     public void generateCode() {
         String packageName = "com.jsen.test";
         boolean serviceNameStartWithI = false;//user -> UserService, 设置成true: user -> IUserService
-        generateByTables(serviceNameStartWithI, packageName, "user", "role", "testtable");
+        generateByTables(serviceNameStartWithI, packageName, "account", "role", "testtable");
     }
 
     private void generateByTables(boolean serviceNameStartWithI, String packageName, String... tableNames) {
         GlobalConfig config = new GlobalConfig();
-        String dbUrl = "jdbc:mysql://localhost:3306/test001";
+        String dbUrl = "jdbc:mysql://192.168.0.91:2200/jtest001";
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
         dataSourceConfig.setDbType(DbType.MYSQL)
                 .setUrl(dbUrl)
-                .setUsername("root")
-                .setPassword("395945")
+                .setUsername("SCS")
+                .setPassword("123456")
                 .setDriverName("com.mysql.jdbc.Driver");
         StrategyConfig strategyConfig = new StrategyConfig();
         strategyConfig
@@ -37,7 +37,8 @@ public class GeneratorServiceEntity {
                 .setBaseResultMap(true)
                 .setAuthor("jsen")
                 .setOutputDir("D:\\Test\\MbpT\\src\\main\\java")
-                .setFileOverride(false);
+                .setOutputDir("/Users/jsen/Gen")
+                .setFileOverride(true);
         if (!serviceNameStartWithI) {
             config.setServiceName("%sService");
         }

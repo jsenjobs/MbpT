@@ -6,6 +6,7 @@ import com.jsen.test.entity.Testtable;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.RowBounds;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -17,6 +18,7 @@ import java.util.List;
  * @author jsen
  * @since 2018-03-21
  */
+@Service
 public interface TesttableMapper extends BaseMapper<Testtable> {
 
     // 此注解表示不使用多租户
