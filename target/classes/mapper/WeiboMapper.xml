@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jsen.test.mapper.WeiboMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jsen.test.entity.Weibo">
+        <id column="id" property="id" />
+        <result column="a_id" property="aId" />
+        <result column="create_time" property="createTime" />
+        <result column="content" property="content" />
+    </resultMap>
+
+    <!-- join union 查询 -->
+    <resultMap id="weiboJoinAccountMap" type="com.jsen.test.entity.union.WeiboJoinAccount">
+        <association column="id" property="weibo" javaType="com.jsen.test.entity.Weibo" resultMap="BaseResultMap" />
+        <association column="a_id" property="account" javaType="com.jsen.test.entity.Account" resultMap="joinAccount" />
+    </resultMap>
+    <resultMap id="joinAccount" type="com.jsen.test.entity.Account">
+        <id column="id" property="id" />
+        <result column="name" property="name" />
+        <result column="sex" property="sex" />
+        <result column="password" property="password" />
+        <result column="lastlogin" property="lastlogin" />
+    </resultMap>
+    <select id="findWeiboJoinAccount" resultMap="weiboJoinAccountMap" parameterType="com.jsen.test.entity.Weibo">
+        <!-- SELECT w.id,w.create_time,w.content,a.id as a_id,a.name,a.sex,a.password,a.lastlogin FROM weibo w LEFT JOIN account a on w.a_id=a.id WHERE #{createTime} > w.create_time  ORDER BY w.create_time DESC -->
+        SELECT w.id,w.create_time,w.content,w.a_id,a.name,a.sex,a.password,a.lastlogin FROM weibo w LEFT JOIN account a on w.a_id=a.id WHERE #{createTime} > w.create_time  ORDER BY w.create_time DESC
+    </select>
+
+    <select id="findWeibosByAID" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        SELECT * from weibo WHERE a_id=#{0}
+    </select>
+</mapper>

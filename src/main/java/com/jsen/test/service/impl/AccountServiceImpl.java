@@ -67,5 +67,10 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
         }
     }
 
+    @Override
+    public ResponseBase listAccountJoinWeibos() {
+        return ResponseBase.create().code(0).add("data", baseMapper.listAccountJoinWeibos());
+    }
+
 
 }

@@ -14,4 +14,22 @@
         <result column="lastlogin" property="lastlogin" />
     </resultMap>
 
+    <!--  Account join all weibos  -->
+    <resultMap id="accountJoinWeibosMap" type="com.jsen.test.entity.union.AccountJoinWeibos">
+        <association column="a_id" property="account" javaType="com.jsen.test.entity.Account" resultMap="BaseResultMap" />
+        <collection column="a_id" property="weiboList" javaType="java.util.ArrayList" ofType="com.jsen.test.entity.Weibo" select="com.jsen.test.mapper.WeiboMapper.findWeibosByAID" />
+    </resultMap>
+
+
+    <resultMap id="joinWeibo" type="com.jsen.test.entity.Weibo">
+        <id column="id" property="id" />
+        <result column="a_id" property="aId" />
+        <result column="create_time" property="createTime" />
+        <result column="content" property="content" />
+    </resultMap>
+
+    <select id="listAccountJoinWeibos" resultMap="accountJoinWeibosMap" >
+        SELECT a.id as a_id,a.name,a.sex,a.lastlogin FROM account a
+    </select>
+
 </mapper>

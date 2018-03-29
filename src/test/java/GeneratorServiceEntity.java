@@ -9,21 +9,26 @@ import org.junit.Test;
 
 public class GeneratorServiceEntity {
 
+    // String dbUrl = "jdbc:mysql://192.168.0.91:2200/jtest001";
+    String dbUrl = "jdbc:mysql://localhost:3306/jtest001";
+    // String username = "SCS";
+    String username = "root";
+    // String password = "123456";
+    String password = "";
     @Test
     public void generateCode() {
         String packageName = "com.jsen.test";
         boolean serviceNameStartWithI = false;//user -> UserService, 设置成true: user -> IUserService
-        generateByTables(serviceNameStartWithI, packageName, "account", "role", "testtable");
+        generateByTables(serviceNameStartWithI, packageName, "account", "role", "testtable", "weibo");
     }
 
     private void generateByTables(boolean serviceNameStartWithI, String packageName, String... tableNames) {
         GlobalConfig config = new GlobalConfig();
-        String dbUrl = "jdbc:mysql://192.168.0.91:2200/jtest001";
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
         dataSourceConfig.setDbType(DbType.MYSQL)
                 .setUrl(dbUrl)
-                .setUsername("SCS")
-                .setPassword("123456")
+                .setUsername(username)
+                .setPassword(password)
                 .setDriverName("com.mysql.jdbc.Driver");
         StrategyConfig strategyConfig = new StrategyConfig();
         strategyConfig

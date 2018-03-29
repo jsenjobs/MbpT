@@ -19,8 +19,8 @@ import java.util.logging.Logger;
  * Created by jsen on 17/09/2016.
  * handle error request path
  */
-@RestController
-@CrossOrigin
+// @RestController
+// @CrossOrigin
 class AppErrorController implements ErrorController {
     private static final Logger logger = Logger.getLogger(AppErrorController.class.getName());
 
