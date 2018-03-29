@@ -20,5 +20,27 @@ public interface AccountService extends IService<Account> {
     JSONObject create(String domain, String token, String sex);
 
     ResponseBase listAccountJoinWeibos();
+    // 使用join完成一对多映射
+    ResponseBase listAccountJoinWeibosUseJoin();
+    ResponseBase listAccountAll();
+    ResponseBase listAccountAllUseJoin();
+
+    ResponseBase listFlat();
+
+    // 显示视图中的数据
+    ResponseBase listInfoInView(String name);
+
+    ResponseBase listBetween(int id1, int id2);
+
+    ResponseBase listLimit(int offset, int limit);
+
+    ResponseBase deleteDistinct();
+
+    ResponseBase randomList();
+
+
+    ResponseBase updateNameById(int id, String name);
+    ResponseBase updateId(int id, int newId);
+    ResponseBase deleteById(int id);
 
 }

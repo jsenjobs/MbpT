@@ -1,10 +1,8 @@
 package com.jsen.test.service;
 
-import com.jsen.test.entity.Weibo;
+import com.jsen.test.entity.Link;
 import com.baomidou.mybatisplus.service.IService;
 import com.jsen.test.utils.ResponseBase;
-
-import java.util.List;
 
 /**
  * <p>
@@ -14,8 +12,8 @@ import java.util.List;
  * @author jsen
  * @since 2018-03-29
  */
-public interface WeiboService extends IService<Weibo> {
+public interface LinkService extends IService<Link> {
 
-    ResponseBase getWeibos(String name);
+    ResponseBase listAll();
 
 }

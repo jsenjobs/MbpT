@@ -22,8 +22,8 @@ import java.util.List;
 public class WeiboServiceImpl extends ServiceImpl<WeiboMapper, Weibo> implements WeiboService {
 
     @Override
-    public ResponseBase getWeibos() {
-        Weibo weibo = new Weibo().setCreateTime(new Date());
+    public ResponseBase getWeibos(String name) {
+        Weibo weibo = new Weibo().setCreateTime(new Date()).setContent(name);
 
 
         return ResponseBase.create().code(0).add("data", baseMapper.findWeiboJoinAccount(weibo));
