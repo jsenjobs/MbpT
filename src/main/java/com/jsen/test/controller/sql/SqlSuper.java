@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @CrossOrigin
 @RequestMapping("/sql")
-public class SqlTest {
+public class SqlSuper {
 
     @Autowired
     WeiboService weiboService;

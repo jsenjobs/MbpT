@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 @RequestMapping("/sql2")
 // 复合查询
-public class SqlTest2 {
+public class SqlPage {
 
     @Autowired
     AccountService accountService;

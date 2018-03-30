@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @CrossOrigin
 @RequestMapping("/sqlc")
-public class ConstraintsTest {
+public class SqlConstraints {
 
     @Autowired
     AccountService accountService;
