@@ -3,7 +3,7 @@ package com.jsen.test.service.impl;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.google.common.collect.Maps;
 import com.jsen.test.entity.Testtable;
-import com.jsen.test.mapper.db1.TesttableMapper;
+import com.jsen.test.mapper.TesttableMapper;
 import com.jsen.test.service.TesttableService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.apache.ibatis.session.RowBounds;

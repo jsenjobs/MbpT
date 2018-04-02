@@ -1,7 +1,7 @@
 package com.jsen.test.service.impl;
 
 import com.jsen.test.entity.Quartzjob;
-import com.jsen.test.mapper.db1.QuartzjobMapper;
+import com.jsen.test.mapper.QuartzjobMapper;
 import com.jsen.test.service.QuartzjobService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.jsen.test.utils.ResponseBase;

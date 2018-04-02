@@ -2,13 +2,13 @@
   "hints": [],
   "groups": [
     {
-      "sourceType": "com.jsen.test.config.dbs.DB1Conf",
+      "sourceType": "com.jsen.test.config.dbs.MyBatisConf",
       "name": "spring.datasource.db1",
       "sourceMethod": "dataSource1()",
       "type": "javax.sql.DataSource"
     },
     {
-      "sourceType": "com.jsen.test.config.dbs.DB2Conf",
+      "sourceType": "com.jsen.test.config.dbs.MyBatisConf",
       "name": "spring.datasource.db2",
       "sourceMethod": "dataSource2()",
       "type": "javax.sql.DataSource"

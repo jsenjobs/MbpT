@@ -1,7 +1,7 @@
 package com.jsen.test.service.impl;
 
 import com.jsen.test.entity.Role;
-import com.jsen.test.mapper.db1.RoleMapper;
+import com.jsen.test.mapper.RoleMapper;
 import com.jsen.test.service.RoleService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;

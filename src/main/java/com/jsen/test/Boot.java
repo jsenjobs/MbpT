@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication(exclude = {
-        // DataSourceAutoConfiguration.class
+        DataSourceAutoConfiguration.class
 })
 @EnableSwagger2
 // @EnableTransactionManagement

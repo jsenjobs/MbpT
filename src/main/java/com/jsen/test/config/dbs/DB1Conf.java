@@ -21,11 +21,11 @@ import javax.sql.DataSource;
  * @author ${User}
  * @since 2018/4/2
  */
-@Configuration
+// @Configuration
 @MapperScan(basePackages = {"com.jsen.test.mapper.db1"}, sqlSessionFactoryRef = "sqlSessionFactory1")
 public class DB1Conf {
-    @Bean(name = "db1DS")
-    @ConfigurationProperties(prefix = "spring.datasource.db1")
+    // @Bean(name = "db1DS")
+    // @ConfigurationProperties(prefix = "spring.datasource.db1")
     @Primary
     public DataSource dataSource1() {
         return DataSourceBuilder.create().build();

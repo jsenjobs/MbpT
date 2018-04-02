@@ -1,7 +1,7 @@
 package com.jsen.test.service.impl;
 
 import com.jsen.test.entity.Link;
-import com.jsen.test.mapper.db1.LinkMapper;
+import com.jsen.test.mapper.LinkMapper;
 import com.jsen.test.service.LinkService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.jsen.test.utils.ResponseBase;

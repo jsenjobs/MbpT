@@ -1,11 +1,12 @@
 package com.jsen.test.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
-import com.jsen.test.entity.Account;
-import com.jsen.test.mapper.db1.AccountMapper;
-import com.jsen.test.mapper.db2.DB2AccountMapper;
-import com.jsen.test.service.AccountService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import com.jsen.test.config.dbs.help.DS;
+import com.jsen.test.config.dbs.help.DbTypes;
+import com.jsen.test.entity.Account;
+import com.jsen.test.mapper.AccountMapper;
+import com.jsen.test.service.AccountService;
 import com.jsen.test.service.TokenService;
 import com.jsen.test.utils.MD5Util;
 import com.jsen.test.utils.ResponseBase;
@@ -29,8 +30,6 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
 
     @Autowired
     TokenService tokenService;
-    @Autowired
-    DB2AccountMapper db2AccountMapper;
     // 4 hour
     public static long shortExp = 60 * 60 * 4;
     public static long LongExp = 60 * 60 * 24 * 7;
@@ -142,10 +141,14 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
         return ResponseBase.create().code(0).add("effect", eff);
     }
 
+    @Override
+    @DS(DbTypes.DB2)
     public ResponseBase listDb2() {
-        return ResponseBase.create().code(0).msg("db2").add("data", db2AccountMapper.listAll());
+        return ResponseBase.create().code(0).msg("db2").add("data", baseMapper.listAll());
     }
 
+    @Override
+    @DS(DbTypes.DB1)
     public ResponseBase listDb1() {
         return ResponseBase.create().code(0).msg("db2").add("data", baseMapper.listAll());
     }

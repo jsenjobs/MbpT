@@ -22,14 +22,14 @@ import javax.sql.DataSource;
  * @author ${User}
  * @since 2018/4/2
  */
-@Configuration
+// @Configuration
 @MapperScan(basePackages = {"com.jsen.test.mapper.db2"}, sqlSessionFactoryRef = "sqlSessionFactory2")
 public class DB2Conf {
 
 
 
-    @Bean(name = "db2DS")
-    @ConfigurationProperties(prefix = "spring.datasource.db2")
+    // @Bean(name = "db2DS")
+    // @ConfigurationProperties(prefix = "spring.datasource.db2")
     public DataSource dataSource2() {
         return DataSourceBuilder.create().build();
     }
