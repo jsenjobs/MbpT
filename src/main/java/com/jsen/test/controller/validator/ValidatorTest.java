@@ -3,6 +3,7 @@ package com.jsen.test.controller.validator;
 import com.alibaba.fastjson.JSONObject;
 import com.jsen.test.model.Person;
 import com.jsen.test.utils.ResponseBase;
+import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
@@ -14,7 +15,6 @@ import javax.validation.ConstraintViolationException;
 import javax.validation.Valid;
 import javax.validation.ValidationException;
 import javax.validation.constraints.AssertFalse;
-import javax.validation.constraints.NotBlank;
 import java.util.Set;
 
 /**

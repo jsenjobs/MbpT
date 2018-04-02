@@ -1,14 +1,13 @@
 package com.jsen.test.service.impl;
 
 import com.jsen.test.entity.Weibo;
-import com.jsen.test.mapper.WeiboMapper;
+import com.jsen.test.mapper.db1.WeiboMapper;
 import com.jsen.test.service.WeiboService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.jsen.test.utils.ResponseBase;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
-import java.util.List;
 
 /**
  * <p>

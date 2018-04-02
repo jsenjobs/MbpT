@@ -43,4 +43,7 @@ public interface AccountService extends IService<Account> {
     ResponseBase updateId(int id, int newId);
     ResponseBase deleteById(int id);
 
+    ResponseBase listDb1();
+    ResponseBase listDb2();
+
 }

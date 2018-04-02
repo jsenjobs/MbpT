@@ -1,9 +1,9 @@
 package com.jsen.test.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
-import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.jsen.test.entity.Account;
-import com.jsen.test.mapper.AccountMapper;
+import com.jsen.test.mapper.db1.AccountMapper;
+import com.jsen.test.mapper.db2.DB2AccountMapper;
 import com.jsen.test.service.AccountService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.jsen.test.service.TokenService;
@@ -29,6 +29,8 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
 
     @Autowired
     TokenService tokenService;
+    @Autowired
+    DB2AccountMapper db2AccountMapper;
     // 4 hour
     public static long shortExp = 60 * 60 * 4;
     public static long LongExp = 60 * 60 * 24 * 7;
@@ -138,6 +140,14 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
     public ResponseBase deleteById(int id) {
         int eff = baseMapper.deleteById(id);
         return ResponseBase.create().code(0).add("effect", eff);
+    }
+
+    public ResponseBase listDb2() {
+        return ResponseBase.create().code(0).msg("db2").add("data", db2AccountMapper.listAll());
+    }
+
+    public ResponseBase listDb1() {
+        return ResponseBase.create().code(0).msg("db2").add("data", baseMapper.listAll());
     }
 
 

@@ -3,7 +3,7 @@ package com.jsen.test.service.impl;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.jsen.test.entity.Account;
-import com.jsen.test.mapper.AccountMapper;
+import com.jsen.test.mapper.db1.AccountMapper;
 import com.jsen.test.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
