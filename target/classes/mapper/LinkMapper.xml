@@ -15,7 +15,7 @@
     <resultMap id="linkJoinAllMap" type="com.jsen.test.entity.union.LinkJoinAll">
         <association property="link" column="id" javaType="com.jsen.test.entity.Link" resultMap="com.jsen.test.mapper.LinkMapper.BaseResultMap" />
         <association property="weibo" column="w_id" javaType="com.jsen.test.entity.Weibo" resultMap="com.jsen.test.mapper.WeiboMapper.BaseResultMap" />
-        <association property="account" column="a_id" resultMap="com.jsen.test.mapper.db1.AccountMapper.BaseResultMap" />
+        <association property="account" column="a_id" resultMap="com.jsen.test.mapper.AccountMapper.BaseResultMap" />
     </resultMap>
 
 

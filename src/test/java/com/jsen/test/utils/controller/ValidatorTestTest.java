@@ -3,7 +3,7 @@ package com.jsen.test.utils.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.jsen.test.Boot;
 import com.jsen.test.service.AccountService;
-import com.jsen.test.utils.help.ProfilesResolver;
+import com.jsen.test.utils.help.ProfilesResolverLocal;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,7 +24,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes=Boot.class)                   //加载应用程序上下文
 @WebAppConfiguration
-@ActiveProfiles(resolver = ProfilesResolver.class)
+@ActiveProfiles(resolver = ProfilesResolverLocal.class)
 public class ValidatorTestTest {
 
     @Autowired

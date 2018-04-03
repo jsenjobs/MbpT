@@ -16,7 +16,7 @@ public class DynamicDatasource extends AbstractRoutingDataSource {
 
     @Override
     protected Object determineCurrentLookupKey() {
-        log.warn("数据源为{}", DataSourceContextHolder.getDB());
+        log.info("数据源为{}", DataSourceContextHolder.getDB());
         return DataSourceContextHolder.getDB();
     }
 }

@@ -18,12 +18,12 @@
     <resultMap id="accountJoinWeibosMap" type="com.jsen.test.entity.union.AccountJoinWeibos">
         <!-- <association column="a_id" property="account" javaType="com.jsen.test.entity.Account" resultMap="BaseResultMap" /> -->
         <association property="account" column="a_id"
-                     select="com.jsen.test.mapper.db1.AccountMapper.getAccountById"/>
+                     select="com.jsen.test.mapper.AccountMapper.getAccountById"/>
         <collection column="a_id" property="weiboList" javaType="java.util.ArrayList" ofType="com.jsen.test.entity.Weibo" select="com.jsen.test.mapper.WeiboMapper.findWeibosByAID" />
     </resultMap>
     <!--  account, weibo join  -->
     <resultMap id="accountJoinWeibosUseJoinMap" type="com.jsen.test.entity.union.AccountJoinWeibos">
-        <association column="aid" property="account" javaType="com.jsen.test.entity.Account" resultMap="com.jsen.test.mapper.db1.AccountMapper.BaseResultMap" />
+        <association column="aid" property="account" javaType="com.jsen.test.entity.Account" resultMap="com.jsen.test.mapper.AccountMapper.BaseResultMap" />
         <collection column="wid" property="weiboList" javaType="java.util.ArrayList" ofType="com.jsen.test.entity.Weibo" resultMap="com.jsen.test.mapper.WeiboMapper.BaseResultMap" />
     </resultMap>
 
@@ -33,7 +33,7 @@
     <resultMap id="accountAllMap" type="com.jsen.test.entity.union.AccountAll">
         <!-- <association column="a_id" property="account" javaType="com.jsen.test.entity.Account" resultMap="BaseResultMap" /> -->
         <association property="account" column="a_id"
-                     select="com.jsen.test.mapper.db1.AccountMapper.getAccountById"/>
+                     select="com.jsen.test.mapper.AccountMapper.getAccountById"/>
         <collection column="a_id" property="weiboAllList" javaType="java.util.ArrayList" ofType="com.jsen.test.entity.union.WeiboAll" select="com.jsen.test.mapper.WeiboMapper.findAllWeibosByAID" />
     </resultMap>
     <!--  account, weibo, link  join -->
@@ -43,7 +43,7 @@
     </resultMap>
 
     <resultMap id="flatMap" type="com.jsen.test.entity.union.AccountFlat">
-        <association property="account" column="aid" resultMap="com.jsen.test.mapper.db1.AccountMapper.BaseResultMap" />
+        <association property="account" column="aid" resultMap="com.jsen.test.mapper.AccountMapper.BaseResultMap" />
         <association property="weibo" column="wid" resultMap="com.jsen.test.mapper.WeiboMapper.BaseResultMap" />
         <association property="link" column="lid" resultMap="com.jsen.test.mapper.LinkMapper.BaseResultMap" />
     </resultMap>
