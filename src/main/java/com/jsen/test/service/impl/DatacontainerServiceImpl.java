@@ -1,5 +1,6 @@
 package com.jsen.test.service.impl;
 
+import com.google.common.collect.Lists;
 import com.jsen.test.entity.Datacontainer;
 import com.jsen.test.mapper.DatacontainerMapper;
 import com.jsen.test.service.DatacontainerService;
@@ -174,5 +175,32 @@ public class DatacontainerServiceImpl extends ServiceImpl<DatacontainerMapper, D
             throw new RuntimeException("trans from 批量插入");
         }
         return ResponseBase.create().code(0).msg("批量插入").add("eff", eff).add("duration", end - start).add("totalDuration", end - pStart);
+    }
+
+    @Override
+    public ResponseBase wrInserts(int num) {
+        List<Datacontainer> list = Lists.newArrayList();
+        for (int i = 0; i < num; i++) {
+            list.add(new Datacontainer().setData("data" + i).setTip("tip" + i));
+        }
+        int eff =  baseMapper.insertBatch(list);
+        return ResponseBase.create().code(0).msg("批量插入-wr").add("eff", eff);
+    }
+
+    @Override
+    public ResponseBase wrUpdate(int id, String data) {
+        int eff =  baseMapper.updateDataById(id, data);
+        return ResponseBase.create().code(0).msg("更新-wr").add("eff", eff);
+    }
+
+    @Override
+    public ResponseBase wrDelete(int id) {
+        int eff =  baseMapper.deleteById(id);
+        return ResponseBase.create().code(0).msg("删除-wr").add("eff", eff);
+    }
+
+    @Override
+    public ResponseBase wrList() {
+        return ResponseBase.create().code(0).msg("list-wr").add("data", baseMapper.listAll());
     }
 }

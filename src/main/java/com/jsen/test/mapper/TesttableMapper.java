@@ -23,7 +23,7 @@ public interface TesttableMapper extends BaseMapper<Testtable> {
 
     // 此注解表示不使用多租户
     @SqlParser(filter = true)
-    List<Testtable> selectMy(RowBounds rowBounds, @Param("ew")Wrapper<Testtable> wrapper);
+    List<Testtable> findMy(RowBounds rowBounds, @Param("ew")Wrapper<Testtable> wrapper);
 
     List<Testtable> listAll();
 }

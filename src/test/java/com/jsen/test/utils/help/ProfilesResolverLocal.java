@@ -7,7 +7,7 @@ public class ProfilesResolverLocal implements ActiveProfilesResolver {
     public String[] resolve(Class<?> aClass) {
         String activeProfiles = System.getProperty("spring.profiles.active");
         System.out.println(activeProfiles);
-        return new String[] {activeProfiles != null ? activeProfiles : "local"};
+        return new String[] {activeProfiles != null ? activeProfiles : "localw"};
     }
 }
 

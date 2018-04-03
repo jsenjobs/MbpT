@@ -17,4 +17,11 @@ public interface DatacontainerMapper extends BaseMapper<Datacontainer> {
 
     int insertBatch(List<Datacontainer> datacontainerList);
     int insertOne(String data, String tip);
+
+
+    int updateDataById(int id, String data);
+
+    List<Datacontainer> listAll();
+
+    int deleteById(int id);
 }

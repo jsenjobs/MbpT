@@ -21,12 +21,12 @@ public class SqlBatch {
         return datacontainerService.insertBatch(num, trans);
     }
 
-    @GetMapping("/batchInsert2/{num}/{trans}")
+    @GetMapping("/batchInsert2/{num}")
     public ResponseBase batchInsert2(@PathVariable("num") int num) {
         return datacontainerService.insertBatch2(num);
     }
 
-    @GetMapping("/batchInsert3/{num}/{trans}")
+    @GetMapping("/batchInsert3/{num}")
     public ResponseBase batchInsert3(@PathVariable("num") int num) {
         return datacontainerService.insertBatch3(num);
     }

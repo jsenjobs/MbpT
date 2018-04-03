@@ -8,5 +8,5 @@ package com.jsen.test.config.dbs.help;
  * @since 2018/4/2
  */
 public enum  DbTypes {
-    DB1, DB2
+    DB1, DB2, DB3
 }

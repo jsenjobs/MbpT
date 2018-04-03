@@ -27,7 +27,7 @@ public class TesttableServiceImpl extends ServiceImpl<TesttableMapper, Testtable
     public List<Testtable> selectMyAll() {
         RowBounds rb = new RowBounds(0, 2);
         EntityWrapper<Testtable> ew = new EntityWrapper<>();
-        return baseMapper.selectMy(rb, ew);
+        return baseMapper.findMy(rb, ew);
     }
 
     @Override
@@ -35,7 +35,7 @@ public class TesttableServiceImpl extends ServiceImpl<TesttableMapper, Testtable
         RowBounds rb = new RowBounds(0, 2);
         EntityWrapper<Testtable> ew = new EntityWrapper<>();
         ew.eq("testint", 7);
-        return baseMapper.selectMy(rb, ew);
+        return baseMapper.findMy(rb, ew);
     }
 
     @Override

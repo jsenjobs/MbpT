@@ -12,6 +12,7 @@ import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 import javax.sql.DataSource;
@@ -40,12 +41,36 @@ public class MyBatisConf {
         return DataSourceBuilder.create().build();
     }
 
-    @Bean
+    @Bean(name = "db3DS")
+    @ConfigurationProperties(prefix = "spring.datasource.db3")
+    @Profile("readwrite")
+    public DataSource dataSource3() {
+        return DataSourceBuilder.create().build();
+    }
+
+    @Bean("dataSource")
     @Primary
+    @Profile({"local", "localw", "scs", "scsw"})
     public DataSource dataSource(@Qualifier("db1DS") DataSource dataSource1, @Qualifier("db2DS") DataSource dataSource2) {
         Map<Object, Object> targetDatasources = Maps.newHashMap();
         targetDatasources.put(DbTypes.DB1, dataSource1);
         targetDatasources.put(DbTypes.DB2, dataSource2);
+
+        DynamicDatasource dynamicDatasource = new DynamicDatasource();
+        dynamicDatasource.setTargetDataSources(targetDatasources);
+        dynamicDatasource.setDefaultTargetDataSource(dataSource1);
+
+        return dynamicDatasource;
+    }
+
+    @Bean("dataSource")
+    @Primary
+    @Profile({"readwrite"})
+    public DataSource dataSource2(@Qualifier("db1DS") DataSource dataSource1, @Qualifier("db2DS") DataSource dataSource2, @Qualifier("db3DS") DataSource dataSource3) {
+        Map<Object, Object> targetDatasources = Maps.newHashMap();
+        targetDatasources.put(DbTypes.DB1, dataSource1);
+        targetDatasources.put(DbTypes.DB2, dataSource2);
+        targetDatasources.put(DbTypes.DB3, dataSource3);
 
         DynamicDatasource dynamicDatasource = new DynamicDatasource();
         dynamicDatasource.setTargetDataSources(targetDatasources);

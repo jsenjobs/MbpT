@@ -37,7 +37,7 @@ public interface AccountMapper extends BaseMapper<Account> {
 
     int deleteDistinct();
 
-    List<Account> randomList();
+    List<Account> listRandom();
 
     int updateId(int id, int newId);
 

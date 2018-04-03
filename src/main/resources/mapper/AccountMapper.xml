@@ -88,7 +88,7 @@
         SELECT * FROM account LIMIT #{arg0},#{arg1}
     </select>
 
-    <select id="randomList" resultMap="BaseResultMap" >
+    <select id="listRandom" resultMap="BaseResultMap" >
         SELECT * FROM account ORDER BY rand() LIMIT 4
     </select>
 

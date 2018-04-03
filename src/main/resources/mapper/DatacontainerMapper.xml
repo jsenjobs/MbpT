@@ -22,4 +22,19 @@
     <insert id="insertOne" parameterType="java.lang.String">
         INSERT INTO datacontainer(data, tip) VALUE(#{arg0},#{arg1})
     </insert>
+
+
+
+    <update id="updateDataById">
+        UPDATE datacontainer SET `data` =#{arg1} where id=#{arg0}
+    </update>
+
+    <select id="listAll" resultMap="BaseResultMap">
+        SELECT * FROM datacontainer
+    </select>
+
+    <delete id="deleteById">
+        DELETE FROM datacontainer WHERE id=#{arg0}
+    </delete>
+
 </mapper>

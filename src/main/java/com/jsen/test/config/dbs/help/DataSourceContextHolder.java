@@ -22,7 +22,7 @@ public class DataSourceContextHolder {
      * 设置数据源名
      */
     public static void setDB(DbTypes dbType) {
-        log.debug("切换到{}数据源", dbType);
+        log.info("切换到{}数据源", dbType);
         contextHolder.set(dbType);
     }
 

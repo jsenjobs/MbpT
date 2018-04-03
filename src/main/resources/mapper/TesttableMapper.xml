@@ -19,11 +19,14 @@
     </resultMap>
 
 
-    <select id="selectMy" resultType="com.jsen.test.entity.Testtable">
+    <select id="findMy" resultType="com.jsen.test.entity.Testtable">
         SELECT * From testtable
         <where>
             ${ew.sqlSegment}
         </where>
+    </select>
+    <select id="listAll" resultType="com.jsen.test.entity.Testtable">
+        SELECT * From testtable
     </select>
 
 

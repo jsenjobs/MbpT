@@ -22,4 +22,10 @@ public interface DatacontainerService extends IService<Datacontainer> {
     ResponseBase transTimeout(int num, long sleep);
     ResponseBase transReadOnly(int num);
     ResponseBase transNoRollBackException(int num);
+
+
+    ResponseBase wrInserts(int num);
+    ResponseBase wrUpdate(int id, String data);
+    ResponseBase wrDelete(int id);
+    ResponseBase wrList();
 }
