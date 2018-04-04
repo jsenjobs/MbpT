@@ -2,57 +2,117 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1254b8b3-b69e-4c3e-b56a-aa9e8ccf97ce" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/ReadWriteAspect.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/sql/SqlReadWrite.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/application-localw.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/application-readwrite.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/application-scsw.properties" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/sql/jtest001.sql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/sql/jtest002.sql" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/jsen/test/service/DatacontainerServiceTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/eureka/EurekaConf.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/cloud/TestEureka.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/quartz/RemoteQuartz.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/DynamicJob.groovy" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/sk/IJob.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/sk/RemoteJob.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/model/RemoteQuartzConf.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/RemoteQuartzService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/RemoteQuartzServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.properties" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_8.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_45.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_10.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_10.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_28.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_28.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_28.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_27_incubating.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_7_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_0_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_4_RELEASE.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/MbpT.iml" afterPath="$PROJECT_DIR$/MbpT.iml" />
-      <change beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/Boot.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/Boot.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/QuartzConf.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/QuartzConf.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/XxlJobConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/XxlJobConfig.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/controller/AppErrorController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/controller/AppErrorController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/DB1Conf.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/DB1Conf.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/DB2Conf.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/DB2Conf.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/MyBatisConf.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/MyBatisConf.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DataSourceContextHolder.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DataSourceContextHolder.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DbTypes.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DbTypes.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/sql/SqlBatch.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/sql/SqlBatch.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/AccountMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/AccountMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/DatacontainerMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/DatacontainerMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/TesttableMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/TesttableMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/DatacontainerService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/DatacontainerService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/AccountServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/AccountServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/DatacontainerServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/DatacontainerServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/TesttableServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/TesttableServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-local.back2.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-scs.properties" afterPath="$PROJECT_DIR$/src/main/resources/application-scs.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-scs.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AccountMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AccountMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DatacontainerMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DatacontainerMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TesttableMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TesttableMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jsen/test/utils/help/ProfilesResolverLocal.java" afterPath="$PROJECT_DIR$/src/test/java/com/jsen/test/utils/help/ProfilesResolverLocal.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jsen/test/utils/help/ProfilesResolverScs.java" afterPath="$PROJECT_DIR$/src/test/java/com/jsen/test/utils/help/ProfilesResolverScs.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-local.back2.yml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-scs.properties" afterPath="$PROJECT_DIR$/target/classes/application-scs.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-scs.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/quartz/QuartzController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/quartz/QuartzController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/entity/Quartzjob.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/entity/Quartzjob.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/BaseJob.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/BaseJob.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/QuartzjobService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/QuartzjobService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/QuartzjobServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/QuartzjobServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-local.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-localw.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-readwrite.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-scs.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-scsw.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/weibo.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xxl-job.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test001.java" afterPath="$PROJECT_DIR$/src/test/java/Test001.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-local.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-localw.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-readwrite.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-scs.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-scsw.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/Boot.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/Boot.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/config/QuartzConf.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/config/QuartzConf.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/config/XxlJobConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/config/XxlJobConfig.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/config/controller/AppErrorController.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/config/controller/AppErrorController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/config/dbs/DB1Conf.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/config/dbs/DB1Conf.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/config/dbs/DB2Conf.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/config/dbs/DB2Conf.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/config/dbs/MyBatisConf.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/config/dbs/MyBatisConf.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/config/dbs/help/DataSourceContextHolder.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/config/dbs/help/DataSourceContextHolder.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/config/dbs/help/DbTypes.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/config/dbs/help/DbTypes.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/sql/SqlBatch.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/sql/SqlBatch.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/mapper/AccountMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/mapper/AccountMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/mapper/DatacontainerMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/mapper/DatacontainerMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/mapper/TesttableMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/mapper/TesttableMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/DatacontainerService.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/DatacontainerService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/AccountServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/AccountServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/DatacontainerServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/DatacontainerServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/TesttableServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/TesttableServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/AccountMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/AccountMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DatacontainerMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/DatacontainerMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TesttableMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/TesttableMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jsen/test/utils/help/ProfilesResolverLocal.class" afterPath="$PROJECT_DIR$/target/test-classes/com/jsen/test/utils/help/ProfilesResolverLocal.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jsen/test/utils/help/ProfilesResolverScs.class" afterPath="$PROJECT_DIR$/target/test-classes/com/jsen/test/utils/help/ProfilesResolverScs.class" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jsen/test/utils/service/WeiboServiceTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/jsen/test/utils/service/WeiboServiceTest.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/quartz/QuartzController.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/quartz/QuartzController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/validator/ValidatorTest.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/validator/ValidatorTest.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/entity/Quartzjob.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/entity/Quartzjob.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/model/Person.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/model/Person.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/QuartzjobServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/QuartzjobServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/weibo.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/xxl-job.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test001.class" afterPath="$PROJECT_DIR$/target/test-classes/Test001.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,138 +123,119 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.78129953">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="application-localw.properties" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/application-localw.properties">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="188">
-                  <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="application-readwrite.properties" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/application-readwrite.properties">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="17" column="74" lean-forward="false" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MyBatisConf.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/MyBatisConf.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="114">
-                  <caret line="67" column="22" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ReadWriteAspect.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/ReadWriteAspect.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
-                  <caret line="14" column="88" lean-forward="true" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Boot.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/Boot.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
-                  <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#618#619#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DbTypes.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DbTypes.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
-                  <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="SqlReadWrite.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/sql/SqlReadWrite.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="164">
-                  <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#488#489#0" expanded="true" />
-                    <element signature="e#546#547#0" expanded="true" />
-                    <element signature="e#838#839#0" expanded="true" />
-                    <element signature="e#894#895#0" expanded="true" />
-                    <element signature="e#953#954#0" expanded="true" />
-                    <element signature="e#1005#1006#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="DynamicDataSourceAspect.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DynamicDataSourceAspect.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="TestAspect.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/aspect/TestAspect.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="139">
-                  <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Test002.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/aspect/Test002.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="LogAspect.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/aspect/LogAspect.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1216">
-                  <caret line="75" column="39" lean-forward="false" selection-start-line="75" selection-start-column="39" selection-end-line="80" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="QuartzjobServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/QuartzjobServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="224" column="0" lean-forward="false" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemoteQuartzServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/RemoteQuartzServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="53" column="68" lean-forward="false" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemoteQuartzService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/RemoteQuartzService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="13" column="75" lean-forward="false" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemoteJob.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/sk/RemoteJob.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuartzjobService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/QuartzjobService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JobDetail.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/1.8.6/quartz-1.8.6-sources.jar!/org/quartz/JobDetail.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="179">
+              <caret line="314" column="16" lean-forward="false" selection-start-line="314" selection-start-column="16" selection-end-line="314" selection-end-column="16" />
+              <folding>
+                <element signature="e#8390#8391#0" expanded="true" />
+                <element signature="e#8434#8435#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseJob.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/BaseJob.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DynamicJob.groovy" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/DynamicJob.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
+              <folding>
+                <element signature="e#44#93#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemoteQuartz.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/quartz/RemoteQuartz.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="539">
+              <caret line="102" column="15" lean-forward="false" selection-start-line="102" selection-start-column="15" selection-end-line="102" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IJob.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/sk/IJob.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -206,9 +247,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>BAD_REQUEST</find>
-      <find>findWeiboJoinAccount</find>
-      <find>joinWeibo</find>
       <find>accountJoinWeibosUseJoinMap</find>
       <find>findWeibosByAID</find>
       <find>weiboWithLinkMap</find>
@@ -229,6 +267,16 @@
       <find>getAccountById</find>
       <find>db1</find>
       <find>randomList</find>
+      <find>192.168.0.176</find>
+      <find>8083</find>
+      <find>cloud</find>
+      <find>quartz</find>
+      <find>quar</find>
+      <find>fast</find>
+      <find>lom</find>
+      <find>StdScheduler</find>
+      <find>scheduleJob</find>
+      <find>jobClass</find>
     </findStrings>
     <replaceStrings>
       <replace>=</replace>
@@ -245,39 +293,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/application-loca.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/MybatisPlusConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/DBScsConf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/db1/WeiboMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/DB3Conf.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/db2/AccountMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/scs/mapper/AccountMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/db2/AccountMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/db2/DB2AccountMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/db1/AccountMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/AccountService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/mulds/MulDatasourceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/db1/AccountMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/WeiboMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/TestServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/DB1Conf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/DB2Conf.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/Boot.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/LinkMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/QuartzjobMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DynamicDatasource.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jsen/test/utils/mapper/AccountTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jsen/test/utils/service/WeiboServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-localw.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jsen/test/service/DatacontainerServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jsen/test/utils/help/ProfilesResolverLocalw.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jsen/test/utils/help/ProfilesResolverLocal.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jsen/test/utils/help/ProfilesResolverScs.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-scsw.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/application-scs.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/TesttableMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/TesttableMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/TesttableServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DataSourceContextHolder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DynamicDataSourceAspect.java" />
@@ -290,12 +309,41 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/DatacontainerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/sql/SqlReadWrite.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application-ll.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-readwrite.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/CustomCondition.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DbTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/ReadWriteAspect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/MyBatisConf.java" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-readwrite.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/AccountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/springcloud/spring-cloud-dev.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/TestConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-tttt.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/BaseJob.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/DB1Conf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/DB2Conf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/MyBatisConf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/QuartzConf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/XxlJobConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/HealthConf.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/bootstrap.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/controller/AppErrorController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/Boot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/config/eureka/EurekaConf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/entity/Quartzjob.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/model/RemoteQuartzConf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/cloud/TestEureka.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/cloud/RemoteQuartz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/quartz/QuartzController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Test001.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/quartz/RemoteQuartz.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/sk/IJob.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/sk/RemoteJob.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/QuartzjobService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/QuartzjobServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/RemoteQuartzService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/RemoteQuartzServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/DynamicJob.groovy" />
       </list>
     </option>
   </component>
@@ -305,8 +353,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="35" />
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="988" />
@@ -329,10 +376,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -373,37 +417,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="aspect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="dbs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="dbs" type="462c0819:PsiDirectoryNode" />
-              <item name="help" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
@@ -422,7 +436,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="aspect" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
@@ -432,7 +446,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="quartz" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
@@ -441,7 +455,49 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="jobhandler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="jobhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="quartz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="jobhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="quartz" type="462c0819:PsiDirectoryNode" />
+              <item name="dy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="jobhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="quartz" type="462c0819:PsiDirectoryNode" />
+              <item name="dy" type="462c0819:PsiDirectoryNode" />
+              <item name="sk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
@@ -467,7 +523,9 @@
               <item name="MbpT" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
@@ -475,20 +533,112 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="help" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.quartz-scheduler:quartz:1.8.6" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.quartz-scheduler:quartz:1.8.6" type="70bed36:NamedLibraryElementNode" />
+              <item name="quartz-1.8.6.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.quartz-scheduler:quartz:1.8.6" type="70bed36:NamedLibraryElementNode" />
+              <item name="quartz-1.8.6.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="quartz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.quartz-scheduler:quartz:1.8.6" type="70bed36:NamedLibraryElementNode" />
+              <item name="quartz-1.8.6.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="quartz" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.quartz-scheduler:quartz:1.8.6" type="70bed36:NamedLibraryElementNode" />
+              <item name="quartz-1.8.6.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="quartz" type="462c0819:PsiDirectoryNode" />
+              <item name="spi" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -513,6 +663,15 @@
       <recent name="com.jsen.test.service" />
       <recent name="com.jsen.test.utils" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper/db1" />
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/xml" />
+      <recent name="$PROJECT_DIR$/src/main/resources/scs/mapper" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.jsen.test.utils.help" />
       <recent name="com.jsen.test.config.dbs" />
@@ -521,20 +680,11 @@
       <recent name="com.jsen.test.controller.exceptions" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="D:\Test\MbpT\src\main\resources\sql" />
       <recent name="D:\Test\MbpT\src\main\resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help" />
       <recent name="$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/mapper/db1" />
-      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/xml" />
-      <recent name="$PROJECT_DIR$/src/main/resources/scs/mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -549,7 +699,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ReadWrite">
+  <component name="RunManager" selected="JUnit.Test001.test">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -616,19 +766,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="PreconditionsTest.PreArrayPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.jsen.test.guava.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="Test001.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="MbpT" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.jsen.test.guava" />
-      <option name="MAIN_CLASS_NAME" value="com.jsen.test.guava.PreconditionsTest" />
-      <option name="METHOD_NAME" value="PreArrayPosition" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test001" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -641,19 +786,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="PreconditionsTest.PreArrayPositions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.jsen.test.guava.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="Test001.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="MbpT" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.jsen.test.guava" />
-      <option name="MAIN_CLASS_NAME" value="com.jsen.test.guava.PreconditionsTest" />
-      <option name="METHOD_NAME" value="PreArrayPositions" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test001" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -788,19 +928,19 @@
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.LOCALW" />
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.SCSW" />
       <item index="3" class="java.lang.String" itemvalue="Spring Boot.ReadWrite" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PreconditionsTest.PreArrayPosition" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.PreconditionsTest.PreArrayPositions" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.GeneratorServiceEntity.generateCode" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.AccountTest" />
-      <item index="8" class="java.lang.String" itemvalue="JUnit.WeiboServiceTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GeneratorServiceEntity.generateCode" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.AccountTest" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.WeiboServiceTest" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.Test001.test" />
+      <item index="8" class="java.lang.String" itemvalue="JUnit.Test001.test2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WeiboServiceTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AccountTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.GeneratorServiceEntity.generateCode" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.PreconditionsTest.PreArrayPositions" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PreconditionsTest.PreArrayPosition" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Test001.test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.Test001.test2" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.WeiboServiceTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AccountTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.GeneratorServiceEntity.generateCode" />
       </list>
     </recent_temporary>
   </component>
@@ -837,49 +977,58 @@
       <workItem from="1522715855891" duration="2118000" />
       <workItem from="1522718328847" duration="2246000" />
       <workItem from="1522723328711" duration="6908000" />
+      <workItem from="1522736027255" duration="1270000" />
+      <workItem from="1522737338462" duration="9155000" />
+      <workItem from="1522748514937" duration="79000" />
+      <workItem from="1522748801710" duration="1733000" />
+      <workItem from="1522753808965" duration="5000" />
+      <workItem from="1522753837347" duration="3904000" />
+      <workItem from="1522759125297" duration="2893000" />
+      <workItem from="1522801769400" duration="19236000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AccountTest - 2018.04.03 at 08h 54m 02s.xml">
-      <configuration name="AccountTest" configurationId="JUnit" />
+    <history-entry file="Test001_test - 2018.04.04 at 12h 19m 19s.xml">
+      <configuration name="Test001.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountTest - 2018.04.03 at 08h 55m 04s.xml">
-      <configuration name="AccountTest" configurationId="JUnit" />
+    <history-entry file="Test001_test - 2018.04.04 at 12h 19m 56s.xml">
+      <configuration name="Test001.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountTest - 2018.04.03 at 08h 59m 21s.xml">
-      <configuration name="AccountTest" configurationId="JUnit" />
+    <history-entry file="Test001_test - 2018.04.04 at 12h 21m 08s.xml">
+      <configuration name="Test001.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountTest - 2018.04.03 at 09h 00m 18s.xml">
-      <configuration name="AccountTest" configurationId="JUnit" />
+    <history-entry file="Test001_test - 2018.04.04 at 12h 28m 25s.xml">
+      <configuration name="Test001.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WeiboServiceTest - 2018.04.03 at 09h 05m 20s.xml">
-      <configuration name="WeiboServiceTest" configurationId="JUnit" />
+    <history-entry file="Test001_test - 2018.04.04 at 12h 29m 16s.xml">
+      <configuration name="Test001.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WeiboServiceTest - 2018.04.03 at 09h 06m 19s.xml">
-      <configuration name="WeiboServiceTest" configurationId="JUnit" />
+    <history-entry file="Test001_test - 2018.04.04 at 13h 31m 59s.xml">
+      <configuration name="Test001.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WeiboServiceTest - 2018.04.03 at 09h 06m 54s.xml">
-      <configuration name="WeiboServiceTest" configurationId="JUnit" />
+    <history-entry file="Test001_test2 - 2018.04.04 at 12h 14m 31s.xml">
+      <configuration name="Test001.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WeiboServiceTest - 2018.04.03 at 09h 08m 24s.xml">
-      <configuration name="WeiboServiceTest" configurationId="JUnit" />
+    <history-entry file="Test001_test2 - 2018.04.04 at 12h 14m 50s.xml">
+      <configuration name="Test001.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WeiboServiceTest - 2018.04.03 at 09h 09m 09s.xml">
-      <configuration name="WeiboServiceTest" configurationId="JUnit" />
+    <history-entry file="Test001_test2 - 2018.04.04 at 12h 15m 00s.xml">
+      <configuration name="Test001.test2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WeiboServiceTest - 2018.04.03 at 09h 09m 50s.xml">
-      <configuration name="WeiboServiceTest" configurationId="JUnit" />
+    <history-entry file="Test001_test2 - 2018.04.04 at 12h 15m 09s.xml">
+      <configuration name="Test001.test2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94933000" />
+    <option name="totallyTimeSpent" value="133208000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="988" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09974093" sideWeight="0.234375" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40611354" sideWeight="0.2375" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -889,18 +1038,19 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901555" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286026" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09974093" sideWeight="0.765625" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38537118" sideWeight="0.7625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15829694" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33072916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -909,7 +1059,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Learn" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -920,60 +1069,20 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/quartz/RemoteQuartz.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LinkMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/QuartzjobMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/RoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/WeiboService.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jsen/test/utils/mapper/AccountTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/WeiboServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/WeiboMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/mulds/MulDatasourceTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jsen/test/utils/service/WeiboServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jsen/test/utils/help/ProfilesResolverLocalw.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jsen/test/utils/help/ProfilesResolverLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="78" lean-forward="false" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jsen/test/service/DatacontainerServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jsen/test/utils/help/ProfilesResolverScs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="76" lean-forward="false" selection-start-line="9" selection-start-column="76" selection-end-line="9" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-scs.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -981,342 +1090,540 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-scs.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/XxlJobConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-local.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-tttt.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/custome.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="15">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-scsw.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jsen/test/utils/controller/ValidatorTestTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="37" lean-forward="false" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        <state relative-caret-position="74">
+          <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/LinkMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/HealthConf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/QuartzjobMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/controller/AppErrorController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="120">
+          <caret line="23" column="3" lean-forward="false" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/RoleMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/bootstrap.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="15">
+          <caret line="1" column="58" lean-forward="false" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TesttableMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/MybatisPlusConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <marker date="1522725119194" expanded="true" signature="1129:1152" ph="SELECT * Fro... testtable" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/TesttableMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="28" column="1" lean-forward="false" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/WeiboMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/TesttableServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="37" column="32" lean-forward="false" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/AccountServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="122" column="80" lean-forward="false" selection-start-line="122" selection-start-column="80" selection-end-line="122" selection-end-column="80" />
-          <folding>
-            <element signature="e#4251#4252#0" expanded="false" />
-            <element signature="e#4340#4341#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
+        <state relative-caret-position="105">
           <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/aspect/LogAspect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/MyBatisConf.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="75" column="39" lean-forward="false" selection-start-line="75" selection-start-column="39" selection-end-line="80" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DataSourceContextHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DynamicDataSourceAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/aspect/TestAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/aspect/Test002.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DynamicDatasource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="17" column="46" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/sql/SqlBatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="16" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.1.9/mybatis-plus-support-2.1.9-sources.jar!/com/baomidou/mybatisplus/mapper/BaseMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="106" column="12" lean-forward="false" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/AccountMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="43" column="28" lean-forward="false" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/AccountMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="101" column="13" lean-forward="false" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
+        <state relative-caret-position="177">
+          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="23" />
           <folding>
-            <marker date="1522727831860" expanded="true" signature="3331:3390" ph="SELECT a.id account" />
-            <marker date="1522727831860" expanded="true" signature="3502:3629" ph="SELECT a.id account" />
-            <marker date="1522727831860" expanded="true" signature="3711:3770" ph="SELECT a.id account" />
-            <marker date="1522727831860" expanded="true" signature="3868:4053" ph="SELECT a.id account" />
-            <marker date="1522727831860" expanded="true" signature="4171:4206" ph="select * fro... account" />
-            <marker date="1522727831860" expanded="true" signature="4277:4455" ph="SELECT a.id account" />
-            <marker date="1522727831860" expanded="true" signature="4765:4823" ph="SELECT * FRO... account" />
-            <marker date="1522727831860" expanded="true" signature="4935:4978" ph="SELECT * FRO... account" />
-            <marker date="1522727831860" expanded="true" signature="5058:5103" ph="SELECT * FRO... account" />
-            <marker date="1522727831860" expanded="true" signature="5160:5283" ph="DELETE FROM account... " />
-            <marker date="1522727831860" expanded="true" signature="5205:5282" ph="select mid f... MAX" />
-            <marker date="1522727831860" expanded="true" signature="5222:5278" ph="SELECT MAX(i... account" />
-            <marker date="1522727831860" expanded="true" signature="5335:5381" ph="UPDATE account... " />
-            <marker date="1522727831860" expanded="true" signature="5459:5480" ph="SELECT * FRO... account" />
+            <marker date="1522757227000" expanded="true" signature="2721:2970" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/DatacontainerMapper.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/1.8.6/quartz-1.8.6.jar!/org/quartz/Scheduler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+        <state relative-caret-position="84">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding>
-            <marker date="1522727982151" expanded="true" signature="897:956" ph="INSERT INTO datacontainer... " />
-            <marker date="1522727982151" expanded="true" signature="1015:1072" ph="UPDATE datacontainer... " />
-            <marker date="1522727982151" expanded="true" signature="1148:1175" ph="SELECT * FRO... datacontainer" />
-            <marker date="1522727982151" expanded="true" signature="1228:1270" ph="DELETE FROM datacontainer... " />
+            <marker date="1522749244000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522749244000" expanded="false" signature="134:228" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/DatacontainerMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/mulds/MulDatasourceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="23" column="22" lean-forward="false" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        <state relative-caret-position="210">
+          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/DatacontainerService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/1.1.9.RELEASE/spring-cloud-commons-1.1.9.RELEASE.jar!/org/springframework/cloud/client/loadbalancer/LoadBalancerClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/DatacontainerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="203" column="92" lean-forward="false" selection-start-line="203" selection-start-column="92" selection-end-line="203" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/sql/SqlReadWrite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+        <state relative-caret-position="90">
+          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="35" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
+            <marker date="1522745669000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522745669000" expanded="false" signature="169:267" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-localw.properties">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/1.1.9.RELEASE/spring-cloud-commons-1.1.9.RELEASE-sources.jar!/org/springframework/cloud/client/loadbalancer/LoadBalanced.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="12" column="37" lean-forward="false" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        <state relative-caret-position="225">
+          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-readwrite.properties">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/1.1.9.RELEASE/spring-cloud-commons-1.1.9.RELEASE-sources.jar!/org/springframework/cloud/client/loadbalancer/LoadBalancerClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="74" lean-forward="false" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
+        <state relative-caret-position="30">
+          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/CustomCondition.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-client/1.4.12/eureka-client-1.4.12.jar!/com/netflix/discovery/EurekaClientConfig.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="345">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/DbTypes.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-eureka-client/1.2.7.RELEASE/spring-cloud-netflix-eureka-client-1.2.7.RELEASE.jar!/org/springframework/cloud/netflix/ribbon/eureka/EurekaRibbonClientConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="306">
+          <caret line="53" column="53" lean-forward="false" selection-start-line="53" selection-start-column="53" selection-end-line="53" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/Boot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="135">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/1.1.9.RELEASE/spring-cloud-commons-1.1.9.RELEASE-sources.jar!/org/springframework/cloud/client/loadbalancer/LoadBalancerAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/eureka/EurekaConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="17" />
           <folding>
-            <element signature="e#618#619#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#535#536#0" expanded="false" />
+            <element signature="e#573#574#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.4.RELEASE/spring-context-5.0.4.RELEASE.jar!/org/springframework/context/annotation/Profile.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/1.2.5.RELEASE/spring-cloud-commons-1.2.5.RELEASE.jar!/org/springframework/cloud/client/loadbalancer/LoadBalancerClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="90">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
           <folding>
-            <marker date="1521526669442" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1521526669442" expanded="false" signature="162:355" ph="..." />
-            <marker date="1521526669442" expanded="true" signature="357:491" ph="@{...}" />
+            <marker date="1522808683000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522808683000" expanded="false" signature="169:267" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/MyBatisConf.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/1.2.5.RELEASE/spring-cloud-commons-1.2.5.RELEASE-sources.jar!/org/springframework/cloud/client/loadbalancer/LoadBalancerInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="67" column="22" lean-forward="false" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+        <state relative-caret-position="180">
+          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-commons/1.2.5.RELEASE/spring-cloud-commons-1.2.5.RELEASE-sources.jar!/org/springframework/cloud/client/loadbalancer/LoadBalancerClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/DatacontainerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.13/groovy-all-2.4.13.jar!/groovy/lang/GroovyClassLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="58" column="30" lean-forward="false" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <folding>
+            <marker date="1522313676000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1522313676000" expanded="false" signature="135:1931" ph="..." />
+            <marker date="1522313676000" expanded="false" signature="2364:2375" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="2428:2434" ph=" }" />
+            <marker date="1522313676000" expanded="false" signature="2484:2495" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="2537:2543" ph=" }" />
+            <marker date="1522313676000" expanded="false" signature="2599:2610" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="2645:2651" ph=" }" />
+            <marker date="1522313676000" expanded="true" signature="2767:4297" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="2922:3044" ph="loadGroovySource(filename) → {" />
+            <marker date="1522313676000" expanded="false" signature="3103:3171" ph="run() → {" />
+            <marker date="1522313676000" expanded="false" signature="3861:3884" ph="}" />
+            <marker date="1522313676000" expanded="false" signature="3895:3910" ph="}" />
+            <marker date="1522313676000" expanded="false" signature="4377:4388" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="4415:4421" ph=" }" />
+            <marker date="1522313676000" expanded="true" signature="4494:4701" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="4754:4765" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="4792:4798" ph=" }" />
+            <marker date="1522313676000" expanded="true" signature="4883:5676" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="5764:5864" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="5970:6317" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="6051:6137" ph="run() → {" />
+            <marker date="1522313676000" expanded="false" signature="6225:6240" ph="}" />
+            <marker date="1522313676000" expanded="true" signature="6394:6518" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="6572:6665" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="6671:6689" ph="/**...*/" />
+            <marker date="1522313676000" expanded="true" signature="6813:7569" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="6894:6980" ph="run() → {" />
+            <marker date="1522313676000" expanded="false" signature="7509:7524" ph="}" />
+            <marker date="1522313676000" expanded="true" signature="7662:7738" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="7858:8350" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="8412:10076" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="10140:10329" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="10388:10765" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="10805:11015" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="11090:12115" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="11397:11487" ph="run() → {" />
+            <marker date="1522313676000" expanded="false" signature="11566:11585" ph="}" />
+            <marker date="1522313676000" expanded="true" signature="12218:12283" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="12385:12792" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="12495:12607" ph="run() → {" />
+            <marker date="1522313676000" expanded="false" signature="12698:12713" ph="}" />
+            <marker date="1522313676000" expanded="false" signature="12845:12856" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="12903:12909" ph=" }" />
+            <marker date="1522313676000" expanded="true" signature="13067:13160" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="13214:13456" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="13507:13653" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="13709:13844" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="13877:13888" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="13906:13912" ph=" }" />
+            <marker date="1522313676000" expanded="true" signature="13962:14526" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="14576:14587" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="14609:14615" ph=" }" />
+            <marker date="1522313676000" expanded="false" signature="14655:14666" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="14688:14694" ph=" }" />
+            <marker date="1522313676000" expanded="true" signature="14869:17467" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="17592:18508" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="18583:18634" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="18726:18791" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="18835:18846" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="18880:18886" ph=" }" />
+            <marker date="1522313676000" expanded="true" signature="18946:19559" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="19603:19614" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="19669:19675" ph=" }" />
+            <marker date="1522313676000" expanded="true" signature="19741:20019" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="20098:20903" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="20966:21168" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="21248:21799" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="21849:23260" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="21889:21951" ph="run() → {" />
+            <marker date="1522313676000" expanded="false" signature="23237:23252" ph="}" />
+            <marker date="1522313676000" expanded="true" signature="23300:23528" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="23559:23812" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="23907:25089" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="24056:24067" ph="{}" />
+            <marker date="1522313676000" expanded="true" signature="24121:24743" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="24870:25083" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="25155:27362" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="25480:25623" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="25682:25697" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="25712:25722" ph=" }" />
+            <marker date="1522313676000" expanded="true" signature="25794:26905" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="26989:27107" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="27181:27259" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="27305:27320" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="27346:27356" ph=" }" />
+            <marker date="1522313676000" expanded="true" signature="27426:29592" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="27572:27707" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="27754:27769" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="27802:27812" ph=" }" />
+            <marker date="1522313676000" expanded="false" signature="27846:27861" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="27888:27898" ph=" }" />
+            <marker date="1522313676000" expanded="false" signature="27944:27959" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="27999:28009" ph=" }" />
+            <marker date="1522313676000" expanded="true" signature="28084:28149" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="28192:28207" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="28247:28257" ph=" }" />
+            <marker date="1522313676000" expanded="false" signature="28302:28317" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="28356:28366" ph=" }" />
+            <marker date="1522313676000" expanded="false" signature="28427:28442" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="28489:28499" ph=" }" />
+            <marker date="1522313676000" expanded="false" signature="28556:28571" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="28612:28622" ph=" }" />
+            <marker date="1522313676000" expanded="false" signature="28654:28669" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="28700:28710" ph=" }" />
+            <marker date="1522313676000" expanded="true" signature="28889:29067" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="29185:29266" ph="{...}" />
+            <marker date="1522313676000" expanded="true" signature="29343:29415" ph="{...}" />
+            <marker date="1522313676000" expanded="false" signature="29452:29467" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="29493:29503" ph=" }" />
+            <marker date="1522313676000" expanded="false" signature="29539:29554" ph=" { " />
+            <marker date="1522313676000" expanded="false" signature="29576:29586" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/entity/Quartzjob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/HelloJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/cloud/TestEureka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/model/RemoteQuartzConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test001.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="13" column="765" lean-forward="false" selection-start-line="13" selection-start-column="765" selection-end-line="13" selection-end-column="765" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/1.8.6/quartz-1.8.6-sources.jar!/org/quartz/Scheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="104" column="17" lean-forward="false" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/quartz/QuartzController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/1.8.6/quartz-1.8.6-sources.jar!/org/quartz/impl/SchedulerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-271">
+          <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/1.8.6/quartz-1.8.6-sources.jar!/org/quartz/impl/StdSchedulerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="681" column="25" lean-forward="false" selection-start-line="681" selection-start-column="25" selection-end-line="681" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/1.8.6/quartz-1.8.6-sources.jar!/org/quartz/impl/StdScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="242" column="27" lean-forward="false" selection-start-line="242" selection-start-column="27" selection-end-line="242" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/QuartzConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="82" column="49" lean-forward="false" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/1.8.6/quartz-1.8.6-sources.jar!/org/quartz/core/QuartzScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="821" column="41" lean-forward="false" selection-start-line="821" selection-start-column="41" selection-end-line="821" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/1.8.6/quartz-1.8.6-sources.jar!/org/quartz/spi/JobStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="120" column="9" lean-forward="false" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/BaseJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="228">
-            <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/sk/IJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/jtest001.sql">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/1.8.6/quartz-1.8.6-sources.jar!/org/quartz/JobDetail.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="179">
+          <caret line="314" column="16" lean-forward="false" selection-start-line="314" selection-start-column="16" selection-end-line="314" selection-end-column="16" />
+          <folding>
+            <element signature="e#8390#8391#0" expanded="true" />
+            <element signature="e#8434#8435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/1.8.6/quartz-1.8.6-sources.jar!/org/quartz/JobDataMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="79" column="7" lean-forward="true" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/config/dbs/help/ReadWriteAspect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/sk/RemoteJob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="14" column="88" lean-forward="true" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
+        <state relative-caret-position="330">
+          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/QuartzjobService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/QuartzjobServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="224" column="0" lean-forward="false" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/RemoteQuartzService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="75" lean-forward="false" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/RemoteQuartzServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="53" column="68" lean-forward="false" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/jobhandler/quartz/dy/DynamicJob.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
+          <folding>
+            <element signature="e#44#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/quartz/RemoteQuartz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="102" column="15" lean-forward="false" selection-start-line="102" selection-start-column="15" selection-end-line="102" selection-end-column="15" />
           <folding />
         </state>
       </provider>

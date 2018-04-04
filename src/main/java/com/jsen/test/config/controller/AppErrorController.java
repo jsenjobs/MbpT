@@ -5,8 +5,8 @@ import com.jsen.test.config.shiro.exception.ExpException;
 import com.jsen.test.config.shiro.exception.OtherException;
 import com.jsen.test.config.shiro.exception.TokenException;
 import com.jsen.test.utils.ResponseBase;
-import org.springframework.boot.autoconfigure.web.servlet.error.AbstractErrorController;
-import org.springframework.boot.web.servlet.error.ErrorAttributes;
+import org.springframework.boot.autoconfigure.web.AbstractErrorController;
+import org.springframework.boot.autoconfigure.web.ErrorAttributes;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -21,7 +21,7 @@ import java.util.logging.Logger;
  * Created by jsen on 17/09/2016.
  * handle error request path
  */
-@Controller
+// @Controller
 @CrossOrigin
 class AppErrorController extends AbstractErrorController {
 

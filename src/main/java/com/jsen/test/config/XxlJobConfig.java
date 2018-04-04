@@ -16,7 +16,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 @Configuration
 @ComponentScan(basePackages = "com.jsen.test.jobhandler")
-@PropertySource({"classpath:/xxl-job.properties"})
+// @PropertySource({"classpath:/xxl-job.properties"})
 public class XxlJobConfig {
     private Logger logger = LoggerFactory.getLogger(XxlJobConfig.class);
 

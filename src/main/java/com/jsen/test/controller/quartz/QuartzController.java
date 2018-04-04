@@ -20,6 +20,28 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 @RequestMapping("/quartz")
 public class QuartzController {
+    static String name = "package com.jsen.test.jobhandler.quartz.dy\n" +
+            "\n" +
+            "import org.quartz.JobExecutionContext\n" +
+            "import org.quartz.JobExecutionException\n" +
+            "import org.slf4j.Logger\n" +
+            "import org.slf4j.LoggerFactory\n" +
+            "\n" +
+            "/**\n" +
+            " * <p>\n" +
+            " * </p>\n" +
+            " *\n" +
+            " * @author ${User}\n" +
+            " * @since 2018/4/4\n" +
+            " */\n" +
+            "class DynamicJob implements BaseJob {\n" +
+            "    private static final Logger LOGGER = LoggerFactory.getLogger(DynamicJob.class)\n" +
+            "\n" +
+            "    @Override\n" +
+            "    void execute(JobExecutionContext context) throws JobExecutionException {\n" +
+            "        LOGGER.error(\"Dynamic Job执行时间: \" + new Date())\n" +
+            "    }\n" +
+            "}\n";
     @Autowired
     QuartzjobService quartzjobService;
     @GetMapping("/create")

@@ -2,7 +2,9 @@ package com.jsen.test.service;
 
 import com.jsen.test.entity.Quartzjob;
 import com.baomidou.mybatisplus.service.IService;
+import com.jsen.test.jobhandler.quartz.dy.sk.IJob;
 import com.jsen.test.utils.ResponseBase;
+import org.quartz.JobDataMap;
 
 /**
  * <p>
@@ -15,6 +17,7 @@ import com.jsen.test.utils.ResponseBase;
 public interface QuartzjobService extends IService<Quartzjob> {
 
     ResponseBase addJob(Quartzjob quartzjob);
+    ResponseBase addJob(Quartzjob quartzjob, IJob iJob);
     ResponseBase updateJob(Quartzjob quartzjob);
     ResponseBase removeJob(Quartzjob quartzjob);
 
