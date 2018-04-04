@@ -26,18 +26,20 @@ import java.util.List;
  * @since 2018-03-22
  */
 @Service
-public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> implements AccountService {
+public class AccountServiceImpl implements AccountService {
 
     @Autowired
     TokenService tokenService;
+    @Autowired
+    AccountMapper accountMapper;
     // 4 hour
     public static long shortExp = 60 * 60 * 4;
     public static long LongExp = 60 * 60 * 24 * 7;
 
     @Override
     public JSONObject login(String domain, String token) {
-        Account account = baseMapper.selectOne(new Account().setName(domain));
-        if (account != null && MD5Util.verify(token, account.getPassword())) {
+        Account account = getOne(domain);
+        if (MD5Util.verify(token, account.getPassword())) {
             // create token
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("id", account.getId());
@@ -57,7 +59,7 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
 
     @Override
     public JSONObject create(String domain, String token, String sex) {
-        Account account = baseMapper.selectOne(new Account().setName(domain));
+        Account account = getOne(domain);
         if (account == null) {
             account = new Account();
             if (account.setName(domain).setPassword(MD5Util.generate(token)).setLastlogin(new Date()).setSex(sex).insert()) {
@@ -72,86 +74,93 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
 
     @Override
     public ResponseBase listAccountJoinWeibos() {
-        return ResponseBase.create().code(0).add("data", baseMapper.listAccountJoinWeibos());
+        return ResponseBase.create().code(0).add("data", accountMapper.listAccountJoinWeibos());
     }
 
     @Override
     public ResponseBase listAccountJoinWeibosUseJoin() {
-        return ResponseBase.create().code(0).add("data", baseMapper.listAccountJoinWeibosUseJoin());
+        return ResponseBase.create().code(0).add("data", accountMapper.listAccountJoinWeibosUseJoin());
     }
 
     @Override
     public ResponseBase listAccountAll() {
-        return ResponseBase.create().code(0).add("data", baseMapper.lisAccountAll());
+        return ResponseBase.create().code(0).add("data", accountMapper.lisAccountAll());
     }
 
     @Override
     public ResponseBase listAccountAllUseJoin() {
-        return ResponseBase.create().code(0).add("data", baseMapper.listAccountAllUseJoin());
+        return ResponseBase.create().code(0).add("data", accountMapper.listAccountAllUseJoin());
     }
 
     @Override
     public ResponseBase listFlat() {
         long t1 = System.currentTimeMillis();
-        List l = baseMapper.listFlat();
+        List l = accountMapper.listFlat();
         System.out.println(System.currentTimeMillis() - t1);
         return ResponseBase.create().code(0).add("data", l);
     }
 
     @Override
     public ResponseBase listInfoInView(String name) {
-        return ResponseBase.create().code(0).add("data", baseMapper.listInView(name));
+        return ResponseBase.create().code(0).add("data", accountMapper.listInView(name));
     }
 
     @Override
     public ResponseBase listBetween(int id1, int id2) {
-        return ResponseBase.create().code(0).add("data", baseMapper.listBetween(id1, id2));
+        return ResponseBase.create().code(0).add("data", accountMapper.listBetween(id1, id2));
     }
 
     @Override
     public ResponseBase listLimit(int offset, int limit) {
-        return ResponseBase.create().code(0).add("data", baseMapper.listLimit(offset, limit));
+        return ResponseBase.create().code(0).add("data", accountMapper.listLimit(offset, limit));
     }
 
     @Override
     public ResponseBase deleteDistinct() {
-        return ResponseBase.create().code(0).add("effect", baseMapper.deleteDistinct());
+        return ResponseBase.create().code(0).add("effect", accountMapper.deleteDistinct());
     }
 
     @Override
     public ResponseBase randomList() {
-        return ResponseBase.create().code(0).add("data", baseMapper.listRandom());
+        return ResponseBase.create().code(0).add("data", accountMapper.listRandom());
     }
 
     @Override
     public ResponseBase updateNameById(int id, String name) {
-        int eff = baseMapper.updateById(new Account().setId(id).setName(name));
+        int eff = accountMapper.updateNameById(id, name);
         return ResponseBase.create().code(0).add("effect", eff);
     }
 
     @Override
     public ResponseBase updateId(int id, int newId) {
-        int eff = baseMapper.updateId(id, newId);
+        int eff = accountMapper.updateId(id, newId);
         return ResponseBase.create().code(0).add("effect", eff);
     }
 
     @Override
     public ResponseBase deleteById(int id) {
-        int eff = baseMapper.deleteById(id);
+        int eff = accountMapper.deleteByID(id);
         return ResponseBase.create().code(0).add("effect", eff);
     }
 
     @Override
     @DS(DbTypes.DB2)
     public ResponseBase listDb2() {
-        return ResponseBase.create().code(0).msg("db2").add("data", baseMapper.listAll());
+        return ResponseBase.create().code(0).msg("db2").add("data", accountMapper.listAll());
     }
 
     @Override
     @DS(DbTypes.DB1)
     public ResponseBase listDb1() {
-        return ResponseBase.create().code(0).msg("db2").add("data", baseMapper.listAll());
+        return ResponseBase.create().code(0).msg("db2").add("data", accountMapper.listAll());
     }
 
+    private Account getOne(String name) {
+        List<Account> accounts = accountMapper.findByName(name);
+        if (accounts.size() > 0) {
+            return accounts.get(0);
+        }
+        return null;
+    }
 
 }

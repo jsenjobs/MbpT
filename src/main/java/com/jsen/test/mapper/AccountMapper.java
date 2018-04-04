@@ -19,7 +19,7 @@ import java.util.List;
  * @since 2018-03-22
  */
 @Service
-public interface AccountMapper extends BaseMapper<Account> {
+public interface AccountMapper {
     List<AccountJoinWeibos> listAccountJoinWeibos();
     List<AccountJoinWeibos> listAccountJoinWeibosUseJoin();
     Account getAccountById(int id);
@@ -42,5 +42,11 @@ public interface AccountMapper extends BaseMapper<Account> {
     int updateId(int id, int newId);
 
     List<Account> listAll();
+
+    List<Account> findByName(String name);
+
+    int deleteByID(int id);
+
+    int updateNameById(int id, String name);
 
 }

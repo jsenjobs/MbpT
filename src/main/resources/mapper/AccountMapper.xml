@@ -107,4 +107,14 @@
         SELECT * FROM account
     </select>
 
+    <select id="findByName" resultMap="BaseResultMap">
+        SELECT * FROM account WHERE name=#{arg0}
+    </select>
+
+    <delete id="deleteByID" >
+        DELETE FROM account WHERE account.id=#{arg0}
+    </delete>
+    <update id="updateNameById">
+        UPDATE account set name=#{arg1} WHERE id=#{arg0}
+    </update>
 </mapper>
