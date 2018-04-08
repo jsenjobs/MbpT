@@ -2,6 +2,7 @@ package com.jsen.test.service.impl;
 
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.jsen.test.entity.Account;
 import com.jsen.test.mapper.AccountMapper;
 import com.jsen.test.service.TestService;
@@ -16,12 +17,10 @@ import java.util.Map;
 
 
 @Service
-public class TestServiceImpl implements TestService {
-    @Autowired
-    AccountMapper mapper;
+public class TestServiceImpl extends ServiceImpl<AccountMapper, Account> implements TestService {
     @Override
     public List<Account> getAllUser() {
-        return mapper.selectList(new EntityWrapper<>());
+        return baseMapper.selectList(new EntityWrapper<>());
     }
     @Override
     @Transactional
@@ -31,21 +30,21 @@ public class TestServiceImpl implements TestService {
         Account u = new Account();
         u.setName("jack");
         u.setSex("nv");
-        result.put("insert", mapper.insert(u));
+        result.put("insert", baseMapper.insert(u));
 
         // DELETE
-        result.put("delete", mapper.delete(new EntityWrapper<Account>().eq("name", "jsen")));
+        result.put("delete", baseMapper.delete(new EntityWrapper<Account>().eq("name", "jsen")));
 
         if (true)
             throw new RuntimeException("Test Exception");
         u = new Account();
         u.setId(5);
         u.setName("jacc");
-        result.put("update", mapper.updateById(u));
+        result.put("update", baseMapper.updateById(u));
         u.setName("lucy");
-        result.put("update2", mapper.update(u, new EntityWrapper<Account>().eq("name", "jacc")));
+        result.put("update2", baseMapper.update(u, new EntityWrapper<Account>().eq("name", "jacc")));
 
-        result.put("list", mapper.selectPage(new Page<Account>(1, 10), new EntityWrapper<Account>().eq("name", "lucy")).size());
+        result.put("list", baseMapper.selectPage(new Page<Account>(1, 10), new EntityWrapper<Account>().eq("name", "lucy")).size());
 
         return result;
     }

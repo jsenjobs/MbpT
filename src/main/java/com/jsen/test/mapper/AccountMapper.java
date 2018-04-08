@@ -2,6 +2,7 @@ package com.jsen.test.mapper;
 
 import com.jsen.test.entity.Account;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.jsen.test.entity.Datacontainer;
 import com.jsen.test.entity.union.AccountAll;
 import com.jsen.test.entity.union.AccountFlat;
 import com.jsen.test.entity.union.AccountJoinWeibos;
@@ -19,7 +20,7 @@ import java.util.List;
  * @since 2018-03-22
  */
 @Service
-public interface AccountMapper {
+public interface AccountMapper extends BaseMapper<Account> {
     List<AccountJoinWeibos> listAccountJoinWeibos();
     List<AccountJoinWeibos> listAccountJoinWeibosUseJoin();
     Account getAccountById(int id);
