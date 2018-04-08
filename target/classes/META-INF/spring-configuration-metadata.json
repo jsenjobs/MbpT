@@ -2,19 +2,19 @@
   "hints": [],
   "groups": [
     {
-      "sourceType": "com.jsen.test.config.dbs.MyBatisConf",
+      "sourceType": "com.jsen.test.config.dbs.MulMyBatisConf",
       "name": "spring.datasource.db1",
       "sourceMethod": "dataSource1()",
       "type": "javax.sql.DataSource"
     },
     {
-      "sourceType": "com.jsen.test.config.dbs.MyBatisConf",
+      "sourceType": "com.jsen.test.config.dbs.MulMyBatisConf",
       "name": "spring.datasource.db2",
       "sourceMethod": "dataSource2()",
       "type": "javax.sql.DataSource"
     },
     {
-      "sourceType": "com.jsen.test.config.dbs.MyBatisConf",
+      "sourceType": "com.jsen.test.config.dbs.MulMyBatisConf",
       "name": "spring.datasource.db3",
       "sourceMethod": "dataSource3()",
       "type": "javax.sql.DataSource"

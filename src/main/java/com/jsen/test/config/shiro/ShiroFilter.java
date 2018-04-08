@@ -1,14 +1,9 @@
 package com.jsen.test.config.shiro;
 
-import com.jsen.test.service.AccountService;
+import com.google.common.base.Throwables;
 import com.jsen.test.service.TokenService;
-import com.jsen.test.service.impl.AccountServiceImpl;
-import com.jsen.test.service.impl.TokenServiceImpl;
-import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.filter.authc.BasicHttpAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -21,15 +16,18 @@ public class ShiroFilter extends BasicHttpAuthenticationFilter {
     @Autowired
     TokenService tokenService;
     @Override
-    protected boolean isLoginAttempt(ServletRequest request, ServletResponse response) {
+    public boolean isLoginAttempt(ServletRequest request, ServletResponse response) {
+        /*
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
         String authorization = httpServletRequest.getHeader("Authorization");
 
         return authorization != null;
+        */
+        return true;
     }
 
     @Override
-    protected boolean executeLogin(ServletRequest request, ServletResponse response) {
+    public boolean executeLogin(ServletRequest request, ServletResponse response) {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
         String authorization = httpServletRequest.getHeader("Authorization");
 
@@ -39,14 +37,24 @@ public class ShiroFilter extends BasicHttpAuthenticationFilter {
         return true;
     }
 
-    @Override protected boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) {
+    @Override
+    public boolean isAccessAllowed(ServletRequest request, ServletResponse response, Object mappedValue) {
         if (isLoginAttempt(request, response)) {
             executeLogin(request, response);
+
+            /*
+            try {
+                executeLogin(request, response);
+            } catch (Exception e) {
+                response401(request, response, e);
+            }
+            */
         }
         return true;
     }
 
     /** * 对跨域提供支持 */
+    /*
     @Override protected boolean preHandle(ServletRequest request, ServletResponse response) throws Exception {
         HttpServletRequest httpServletRequest = (HttpServletRequest) request;
         HttpServletResponse httpServletResponse = (HttpServletResponse) response;
@@ -61,15 +69,17 @@ public class ShiroFilter extends BasicHttpAuthenticationFilter {
 
         return super.preHandle(request, response);
     }
+    */
 
 
-    /** * 将非法请求跳转到 /401 */
-    private void response401(ServletRequest req, ServletResponse resp) {
+    /* 将非法请求跳转到 /401 */
+    private void response401(ServletRequest req, ServletResponse resp, Exception e) {
         try {
             HttpServletResponse httpServletResponse = (HttpServletResponse) resp;
-            httpServletResponse.sendRedirect("/401");
-        } catch (IOException e) {
-            e.printStackTrace();
+            httpServletResponse.sendRedirect("/401/" + e.getMessage());
+        } catch (IOException ei) {
+            Throwables.throwIfUnchecked(ei);
+            ei.printStackTrace();
         }
     }
 

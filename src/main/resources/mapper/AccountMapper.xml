@@ -117,4 +117,8 @@
     <update id="updateNameById">
         UPDATE account set name=#{arg1} WHERE id=#{arg0}
     </update>
+
+    <select id="listAccountList" resultType="com.jsen.test.entity.Account">
+        SELECT * FROM account
+    </select>
 </mapper>

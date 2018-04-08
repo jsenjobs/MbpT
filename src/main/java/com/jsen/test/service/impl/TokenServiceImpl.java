@@ -23,14 +23,14 @@ import java.util.Date;
 public class TokenServiceImpl implements TokenService {
     // seconds
     @Override
-    public String genToken(JSONObject data, long exp) throws UnsupportedEncodingException {
-        Algorithm signatureAlgorithm = Algorithm.HMAC256(genKey()); //指定签名的时候使用的签名算法，也就是header那部分，jjwt已经将这部分内容封装好了。
+    public String genToken(JSONObject data, String userSec, long exp) throws UnsupportedEncodingException {
+        Algorithm signatureAlgorithm = Algorithm.HMAC256(genKey(userSec)); //指定签名的时候使用的签名算法，也就是header那部分，jjwt已经将这部分内容封装好了。
         long nowMills = System.currentTimeMillis(); //生成JWT的时间
         Date now = new Date(nowMills);
 
         JWTCreator.Builder builder = JWT.create()
                 // 创建payload的私有声明（根据特定的业务需要添加，如果要拿这个做验证，一般是需要和jwt的接收方提前沟通好验证方式的）
-                .withClaim("id", data.getString("id"))
+                .withClaim("id", data.getIntValue("id"))
                 .withClaim("username", data.getString("username"))
                 .withClaim("nickname", data.getString("nickname"))
 
@@ -48,10 +48,9 @@ public class TokenServiceImpl implements TokenService {
     }
 
     @Override
-    public DecodedJWT validToken(String token, long exp) {
-
+    public DecodedJWT validToken(String token, String userSec, long exp) {
         try {
-            Algorithm signatureAlgorithm = Algorithm.HMAC256(genKey()); //指定签名的时候使用的签名算法，也就是header那部分，jjwt已经将这部分内容封装好了。
+            Algorithm signatureAlgorithm = Algorithm.HMAC256(genKey(userSec)); //指定签名的时候使用的签名算法，也就是header那部分，jjwt已经将这部分内容封装好了。
             if (exp >= 0) {
                 return JWT.require(signatureAlgorithm).withIssuer("jsen").acceptExpiresAt(exp).build().verify(token);
             } else {
@@ -74,14 +73,25 @@ public class TokenServiceImpl implements TokenService {
         return jsonObject;
     }
 
+    @Override
+    public int getUserId(String token) {
+        DecodedJWT jwt = JWT.decode(token);
+        return jwt.getClaim("id").asInt();
+    }
+
+    @Override
+    public int getUserId(DecodedJWT decodedJWT) {
+        return decodedJWT.getClaim("id").asInt();
+    }
+
 
     @Value("${spring.jwt.profile}")
     private String profile;
     @Value("${spring.jwt.id}")
     private String id;
     private static final String JWT_SECRET = "ai*))!@wlamrhnsdk$%*@u~ksdu34id^";
-    private String genKey() {
-        return profile + JWT_SECRET;
+    private String genKey(String userSec) {
+        return profile + JWT_SECRET + userSec;
     }
     private String genSubject(JSONObject data) {
         JSONObject object = new JSONObject();

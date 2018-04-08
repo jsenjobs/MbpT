@@ -17,7 +17,6 @@ public class ResponseBase extends JSONObject {
     public ResponseBase code(int code) {
         return add("code", code);
     }
-
     public ResponseBase msg(String msg) {
         return add("msg", msg);
     }

@@ -26,8 +26,9 @@ import java.util.Map;
  * @since 2018/4/2
  */
 @Configuration
-@MapperScan("com.jsen.test.mapper")
-public class MyBatisConf {
+// @MapperScan("com.jsen.test.mapper")
+public class MulMyBatisConf {
+
     @Bean(name = "db1DS")
     @ConfigurationProperties(prefix = "spring.datasource.db1")
     public DataSource dataSource1() {

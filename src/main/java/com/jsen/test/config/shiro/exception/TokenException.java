@@ -1,4 +1,12 @@
 package com.jsen.test.config.shiro.exception;
 
-public class TokenException extends RuntimeException {
+import org.apache.shiro.authc.AuthenticationException;
+
+public class TokenException extends AuthenticationException {
+    public TokenException() {
+    }
+
+    public TokenException(String message) {
+        super(message);
+    }
 }

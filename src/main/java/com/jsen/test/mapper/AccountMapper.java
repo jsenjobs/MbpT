@@ -1,5 +1,6 @@
 package com.jsen.test.mapper;
 
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
 import com.jsen.test.entity.Account;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.jsen.test.entity.Datacontainer;
@@ -49,5 +50,8 @@ public interface AccountMapper extends BaseMapper<Account> {
     int deleteByID(int id);
 
     int updateNameById(int id, String name);
+
+    List<Account> listAccountList(Pagination pagination);
+
 
 }

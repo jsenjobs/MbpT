@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jsen.test.mapper.SysRolePermissionMapper">
+
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.jsen.test.entity.SysRolePermission">
+        <id column="id" property="id" />
+        <result column="role_id" property="roleId" />
+        <result column="permission_id" property="permissionId" />
+    </resultMap>
+
+
+    <insert id="createRolePermission" parameterType="com.jsen.test.entity.SysRolePermission">
+        INSERT INTO sys_role_permission(role_id, permission_id) VALUES(#{roleId}, #{permissionId})
+    </insert>
+
+    <delete id="deleteRolePermissionById" parameterType="java.lang.Integer">
+        DELETE FROM sys_role_permission WHERE id=#{arg0}
+    </delete>
+</mapper>

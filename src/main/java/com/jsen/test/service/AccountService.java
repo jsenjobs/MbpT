@@ -15,6 +15,8 @@ import com.jsen.test.utils.ResponseBase;
  */
 public interface AccountService {
 
+    Account getAccountById(int id);
+
     JSONObject login(String domain, String token);
 
     JSONObject create(String domain, String token, String sex);
@@ -45,5 +47,6 @@ public interface AccountService {
 
     ResponseBase listDb1();
     ResponseBase listDb2();
+    ResponseBase listDPage();
 
 }

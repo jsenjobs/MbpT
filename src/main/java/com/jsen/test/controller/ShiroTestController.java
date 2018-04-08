@@ -19,7 +19,7 @@ public class ShiroTestController {
     }
 
     @RequestMapping("/online")
-    @RequiresAuthentication
+    // @RequiresAuthentication
     public JSONObject _online() {
         return ResponseBase.create().code(0).msg("online resources");
     }

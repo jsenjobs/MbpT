@@ -32,4 +32,12 @@ public class MulDatasourceTest {
     public ResponseBase list2() {
         return accountService.listDb2();
     }
+
+    @GetMapping("/listPage")
+    public ResponseBase listPage() {
+        return accountService.listDPage();
+    }
+
+
+
 }

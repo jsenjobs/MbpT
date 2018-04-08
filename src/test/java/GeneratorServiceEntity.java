@@ -19,7 +19,7 @@ public class GeneratorServiceEntity {
     public void generateCode() {
         String packageName = "com.jsen.test";
         boolean serviceNameStartWithI = false;//user -> UserService, 设置成true: user -> IUserService
-        generateByTables(serviceNameStartWithI, packageName, "quartzjob");
+        generateByTables(serviceNameStartWithI, packageName, "sys_filter_chain", "sys_permission", "sys_role", "sys_role_authority", "sys_role_permission", "sys_user", "sys_user_role");
     }
 
     private void generateByTables(boolean serviceNameStartWithI, String packageName, String... tableNames) {
@@ -37,7 +37,7 @@ public class GeneratorServiceEntity {
                 .setDbColumnUnderline(true)
                 .setNaming(NamingStrategy.underline_to_camel)
                 .setInclude(tableNames);//修改替换成你需要的表名，多个表名传数组
-        config.setActiveRecord(true)
+        config.setActiveRecord(false)
                 .setEnableCache(true)
                 .setBaseResultMap(true)
                 .setAuthor("jsen")
