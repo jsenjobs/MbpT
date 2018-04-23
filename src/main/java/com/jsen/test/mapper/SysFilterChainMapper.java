@@ -21,6 +21,8 @@ public interface SysFilterChainMapper extends BaseMapper<SysFilterChain> {
 
     int deleteByUrl(String url);
 
-    int createFilter(SysFilterChain sysFilterChain);
+    int insertFilter(SysFilterChain sysFilterChain);
+
+    SysFilterChain getFilterByUrl(String url);
 
 }

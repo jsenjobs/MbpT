@@ -1,5 +1,6 @@
 package com.jsen.test.mapper;
 
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
 import com.jsen.test.entity.SysPermission;
 import com.jsen.test.entity.SysRole;
 import com.jsen.test.entity.SysUser;
@@ -23,7 +24,14 @@ public interface SysUserMapper extends BaseMapper<SysUser> {
     List<SysRole> getRoleByUserId(int id);
     List<SysPermission> getPermissionByRoleId(int id);
 
-    int createUser(SysUser sysUser);
+    int insertUser(SysUser sysUser);
     int deleteUser(String name);
+
+    List<SysUser> listPage(Pagination pagination);
+
+    int countUser();
+
+    SysUser getUserByName(String name);
+    SysUser getUserById(int id);
 
 }

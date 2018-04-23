@@ -19,7 +19,7 @@ public class GeneratorServiceEntity {
     public void generateCode() {
         String packageName = "com.jsen.test";
         boolean serviceNameStartWithI = false;//user -> UserService, 设置成true: user -> IUserService
-        generateByTables(serviceNameStartWithI, packageName, "sys_filter_chain", "sys_permission", "sys_role", "sys_role_authority", "sys_role_permission", "sys_user", "sys_user_role");
+        generateByTables(serviceNameStartWithI, packageName, "hc_model");
     }
 
     private void generateByTables(boolean serviceNameStartWithI, String packageName, String... tableNames) {

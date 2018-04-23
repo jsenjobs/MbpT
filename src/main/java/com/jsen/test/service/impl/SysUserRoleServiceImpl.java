@@ -1,11 +1,16 @@
 package com.jsen.test.service.impl;
 
+import com.jsen.test.entity.SysRole;
 import com.jsen.test.entity.SysUserRole;
+import com.jsen.test.mapper.SysRoleMapper;
 import com.jsen.test.mapper.SysUserRoleMapper;
 import com.jsen.test.service.SysUserRoleService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.jsen.test.utils.ResponseBase;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.sql.SQLException;
 
 /**
  * <p>
@@ -18,13 +23,21 @@ import org.springframework.stereotype.Service;
 @Service
 public class SysUserRoleServiceImpl extends ServiceImpl<SysUserRoleMapper, SysUserRole> implements SysUserRoleService {
 
+    @Autowired
+    SysRoleMapper sysRoleMapper;
     @Override
     public ResponseBase createUserRole(int u_id, int r_id) {
-        return ResponseBase.create().code(0).add("eff", baseMapper.createUserRole(new SysUserRole().setRoleId(r_id).setUserId(u_id)));
+        if (baseMapper.getRoleByUIdAndRId(u_id, r_id) != null) {
+            return ResponseBase.create().code(1).msg("该角色已拥有");
+        }
+
+        int eff = baseMapper.insertUserRole(new SysUserRole().setRoleId(r_id).setUserId(u_id));
+        SysRole sysRole = sysRoleMapper.getRoleById(r_id);
+        return ResponseBase.create().code(0).add("eff", eff).add("data", sysRole);
     }
 
     @Override
-    public ResponseBase deleteUserRole(int id) {
-        return ResponseBase.create().code(0).add("eff", baseMapper.deleteUserRoleById(id));
+    public ResponseBase deleteUserRole(int user_id, int role_id) {
+        return ResponseBase.create().code(0).add("eff", baseMapper.deleteUserRoleByUserIdAndRoleId(user_id, role_id));
     }
 }

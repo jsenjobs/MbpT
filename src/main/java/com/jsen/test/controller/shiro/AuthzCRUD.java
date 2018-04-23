@@ -1,5 +1,6 @@
 package com.jsen.test.controller.shiro;
 
+import com.jsen.test.entity.SysFilterChain;
 import com.jsen.test.entity.SysUser;
 import com.jsen.test.service.*;
 import com.jsen.test.utils.ResponseBase;
@@ -31,13 +32,18 @@ public class AuthzCRUD {
     @Autowired
     SysRolePermissionService sysRolePermissionService;
 
-    @GetMapping("/create/{url}/{filters}/{sort}")
-    public ResponseBase createFilter(@PathVariable("url") String url, @PathVariable("filters") String filters, @PathVariable("sort") int sort) {
+    @GetMapping("/create")
+    public ResponseBase createFilter(@RequestParam("url") String url, @RequestParam("filters") String filters, @RequestParam("sort") int sort) {
         return sysFilterChainService.createFilter(url, filters, sort);
     }
-    @GetMapping("/delete/{url}")
-    public ResponseBase removeFilterByUrl(@PathVariable("url") String url) {
+    @GetMapping("/delete")
+    public ResponseBase removeFilterByUrl(@RequestParam("url") String url) {
+        System.err.println("DDDD");
         return sysFilterChainService.deleteByUrl(url);
+    }
+    @GetMapping("/filter/list")
+    public ResponseBase listAllFilterChain() {
+        return sysFilterChainService.lists();
     }
 
     // user
@@ -75,9 +81,9 @@ public class AuthzCRUD {
     public ResponseBase addRoleToUser(@PathVariable("uid") int uid, @PathVariable("rid") int rid) {
         return sysUserRoleService.createUserRole(uid, rid);
     }
-    @GetMapping("/delete/uar/{id}")
-    public ResponseBase deleteRoleToUser(@PathVariable("id") int id) {
-        return sysUserRoleService.deleteUserRole(id);
+    @GetMapping("/delete/uar/{user_id}/{role_id}")
+    public ResponseBase deleteRoleToUser(@PathVariable("user_id") int user_id, @PathVariable("role_id") int role_id) {
+        return sysUserRoleService.deleteUserRole(user_id, role_id);
     }
 
     // role add permission
@@ -85,8 +91,41 @@ public class AuthzCRUD {
     public ResponseBase addPermissionToRole(@PathVariable("rid") int rid, @PathVariable("pid") int pid) {
         return sysRolePermissionService.createRolePermission(rid, pid);
     }
-    @GetMapping("/delete/rap/{id}")
-    public ResponseBase deletePermissionToRole(@PathVariable("id") int id) {
-        return sysRolePermissionService.deleteRolePermission(id);
+    @GetMapping("/delete/rap/{role_id}/{permission_id}")
+    public ResponseBase deletePermissionToRole(@PathVariable("role_id") int role_id, @PathVariable("permission_id") int permission_id) {
+        return sysRolePermissionService.deleteRolePermission(role_id, permission_id);
     }
+
+
+    /**
+     *
+     * @param page
+     * @param capacity
+     * @return
+     */
+    @GetMapping("/user/list/{page}/{capacity}")
+    public ResponseBase listUsers(@PathVariable("page") int page, @PathVariable("capacity") int capacity) {
+        return sysUserService.listUser(page, capacity);
+    }
+
+    @GetMapping("/role/list/{page}/{capacity}")
+    public ResponseBase listRoles(@PathVariable("page") int page, @PathVariable("capacity") int capacity) {
+        return sysRoleService.listRole(page, capacity);
+    }
+    @GetMapping("/permission/list/{page}/{capacity}")
+    public ResponseBase listPermission(@PathVariable("page") int page, @PathVariable("capacity") int capacity) {
+        return sysPermissionService.listPermission(page, capacity);
+    }
+
+    @GetMapping("/role/listAll")
+    public ResponseBase listAllRole() {
+        return sysRoleService.listAll();
+    }
+    @GetMapping("/permission/listAll")
+    public ResponseBase listAllPermission() {
+        return sysPermissionService.listAll();
+    }
+
+
+
 }

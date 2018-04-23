@@ -23,4 +23,5 @@ public interface SysFilterChainService {
     ResponseBase createFilter(String url, String filters, int sort);
     ResponseBase deleteByUrl(String url);
 
+    ResponseBase lists();
 }

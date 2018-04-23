@@ -13,8 +13,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 })
 @MapperScan("com.jsen.test.mapper")
 @EnableSwagger2
-@EnableDiscoveryClient
-@EnableEurekaClient
+// @EnableDiscoveryClient
+// @EnableEurekaClient
+
+//
 // @EnableTransactionManagement
 public class Boot {
     public static void main(String[] args) {

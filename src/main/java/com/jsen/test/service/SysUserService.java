@@ -15,4 +15,7 @@ import com.jsen.test.utils.ResponseBase;
 public interface SysUserService extends IService<SysUser> {
     ResponseBase createUser(String name);
     ResponseBase deleteUser(String name);
+    ResponseBase listUser(int page, int capacity);
+
+    ResponseBase login(String username, String password);
 }

@@ -14,6 +14,6 @@ import com.jsen.test.utils.ResponseBase;
  */
 public interface SysRolePermissionService extends IService<SysRolePermission> {
     ResponseBase createRolePermission(int r_id, int p_id);
-    ResponseBase deleteRolePermission(int id);
+    ResponseBase deleteRolePermission(int roleId, int permissionId);
 
 }

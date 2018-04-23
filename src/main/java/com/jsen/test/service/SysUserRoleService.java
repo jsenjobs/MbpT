@@ -14,5 +14,5 @@ import com.jsen.test.utils.ResponseBase;
  */
 public interface SysUserRoleService extends IService<SysUserRole> {
     ResponseBase createUserRole(int u_id, int r_id);
-    ResponseBase deleteUserRole(int id);
+    ResponseBase deleteUserRole(int user_id, int role_id);
 }

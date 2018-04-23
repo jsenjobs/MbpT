@@ -1,24 +1,15 @@
 package com.jsen.test.config.controller;
 
-import com.alibaba.fastjson.JSONObject;
-import com.google.common.collect.Maps;
-import com.jsen.test.config.shiro.exception.ExpException;
-import com.jsen.test.config.shiro.exception.OtherException;
-import com.jsen.test.config.shiro.exception.TokenException;
-import com.jsen.test.utils.ResponseBase;
 import org.springframework.boot.autoconfigure.web.*;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
 
@@ -28,18 +19,52 @@ import java.util.logging.Logger;
  */
 @RestController
 @CrossOrigin
-class AppErrorController extends BasicErrorController {
+class AppErrorController extends AbstractErrorController {
+
+    private final ErrorProperties errorProperties;
+
+    private final static String ERROR_PATH = "/error";
 
     private static final Logger logger = Logger.getLogger(AppErrorController.class.getName());
 
     public AppErrorController(ServerProperties serverProperties) {
-        super(new JDefaultErrorAttributes(), serverProperties.getError());
+        super(new JDefaultErrorAttributes());
+        this.errorProperties = serverProperties.getError();
     }
 
+    @GetMapping(ERROR_PATH)
+    public ResponseEntity<Map<String, Object>> error(HttpServletRequest request, HttpServletResponse response) {
+        Map<String, Object> body = this.getErrorAttributes(request, this.isIncludeStackTrace(request));
+        // response.setStatus((int) body.get("hcode"));
+        response.setStatus(200);
+        return new ResponseEntity<>(body, HttpStatus.valueOf(response.getStatus()));
+    }
     @Override
-    public ResponseEntity<Map<String, Object>> error(HttpServletRequest request) {
-        Map<String, Object> body = this.getErrorAttributes(request, this.isIncludeStackTrace(request, MediaType.ALL));
-        HttpStatus status = this.getStatus(request);
-        return new ResponseEntity(body, status);
+    public String getErrorPath() {
+        return ERROR_PATH;
+    }
+
+    /**
+     * Determine if the stacktrace attribute should be included.
+     * @param request the source request
+     * @return if the stacktrace attribute should be included
+     */
+    protected boolean isIncludeStackTrace(HttpServletRequest request) {
+        ErrorProperties.IncludeStacktrace include = getErrorProperties().getIncludeStacktrace();
+        if (include == ErrorProperties.IncludeStacktrace.ALWAYS) {
+            return true;
+        }
+        if (include == ErrorProperties.IncludeStacktrace.ON_TRACE_PARAM) {
+            return getTraceParameter(request);
+        }
+        return false;
+    }
+
+    /**
+     * Provide access to the error properties.
+     * @return the error properties
+     */
+    protected ErrorProperties getErrorProperties() {
+        return this.errorProperties;
     }
 }

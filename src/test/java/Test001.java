@@ -1,3 +1,5 @@
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -38,5 +40,30 @@ public class Test001 {
                 "        LOGGER.error(\"Dynamic Job执行时间: \" + new Date())\n" +
                 "    }\n" +
                 "}\n".replaceAll("\r", "").replaceAll("\b", ""));
+    }
+
+    @Test
+    public void testJson() {
+        JSONArray jsonArray = new JSONArray();
+        jsonArray.add("sys:ui");
+        jsonArray.add("sys:ui2");
+        jsonArray.add("sys:ui3");
+        jsonArray.add("sys:ui4");
+        jsonArray.add("sys:ui4");
+        for (Object o : jsonArray.toArray()) {
+            System.err.println(o);
+        }
+        String[] s = new String[]{};
+        for (String o : jsonArray.toArray(s)) {
+            System.out.println(o);
+        }
+        for (String o : s) {
+            System.err.println(o);
+        }
+    }
+
+    @Test
+    public void testJson2() {
+        JSONArray jsonArray = JSON.parseArray("[3]");
     }
 }

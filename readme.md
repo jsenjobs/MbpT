@@ -11,3 +11,11 @@ win：
 root:395945
 
 读写分离
+
+
+network sub003
+
+docker build -t jsenht/mbpt:1.0.1 .
+
+docker run -d -p 8090:8080 --name mbpt --network=sub003 jsenht/mbpt:1.0.1
+docker run -d -p 8080:8080 --name mbpt --network=sub003 jsenht/mbpt:1.0.1

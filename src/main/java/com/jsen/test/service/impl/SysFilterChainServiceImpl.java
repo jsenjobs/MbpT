@@ -14,6 +14,7 @@ import org.apache.shiro.web.filter.mgt.PathMatchingFilterChainResolver;
 import org.apache.shiro.web.servlet.AbstractShiroFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -32,20 +33,15 @@ public class SysFilterChainServiceImpl implements SysFilterChainService {
 
     @Autowired
     SysFilterChainMapper sysFilterChainMapper;
-    private JShiroFilterFactoryBean shiroFilter;
-
-    public void setShiroFilter(@Qualifier("shiroFilter") JShiroFilterFactoryBean jShiroFilterFactoryBean) {
-        shiroFilter = jShiroFilterFactoryBean;
-    }
-    public JShiroFilterFactoryBean getShiroFilter() {
-        return this.shiroFilter;
-    }
+    @Autowired
+    @Qualifier("shiroFilter")
+    @Lazy
+    JShiroFilterFactoryBean shiroFilter;
 
     @Override
     public void reloadFilterChain() {
-        synchronized (shiroFilter) {
+        synchronized (this) {
             AbstractShiroFilter sF;
-
             try {
                 sF = (AbstractShiroFilter) shiroFilter.getObject();
 
@@ -79,11 +75,17 @@ public class SysFilterChainServiceImpl implements SysFilterChainService {
 
     @Override
     public ResponseBase createFilter(String url, String filters, int sort) {
-        int eff = sysFilterChainMapper.createFilter(new SysFilterChain().setUrl(url).setFilters(filters).setSort(sort));
+        SysFilterChain sysFilterChain = sysFilterChainMapper.getFilterByUrl(url);
+        if (sysFilterChain != null) {
+            return ResponseBase.create().code(1).msg("该url filter存在");
+        }
+
+        int eff = sysFilterChainMapper.insertFilter(new SysFilterChain().setUrl(url).setFilters(filters).setSort(sort));
         if (eff > 0) {
             reloadFilterChain();
         }
-        return ResponseBase.create().code(0).add("eff", eff);
+        sysFilterChain = sysFilterChainMapper.getFilterByUrl(url);
+        return ResponseBase.create().code(0).add("eff", eff).data(sysFilterChain);
     }
 
     @Override
@@ -93,5 +95,10 @@ public class SysFilterChainServiceImpl implements SysFilterChainService {
             reloadFilterChain();
         }
         return ResponseBase.create().code(0).add("eff", eff);
+    }
+
+    @Override
+    public ResponseBase lists() {
+        return ResponseBase.create().code(0).data(listAll());
     }
 }

@@ -6,15 +6,14 @@ import com.jsen.test.config.shiro.exception.TokenException;
 import com.jsen.test.entity.Account;
 import com.jsen.test.entity.SysPermission;
 import com.jsen.test.entity.SysRole;
+import com.jsen.test.entity.SysUser;
 import com.jsen.test.mapper.SysUserMapper;
-import com.jsen.test.service.AccountService;
 import com.jsen.test.service.TokenService;
 import com.jsen.test.service.impl.AccountServiceImpl;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
-import org.apache.shiro.authz.AuthorizationException;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
@@ -31,8 +30,6 @@ public class ShiroRealm extends AuthorizingRealm {
     SysUserMapper sysUserMapper;
     @Autowired
     TokenService tokenService;
-    @Autowired
-    AccountService accountService;
 
     @Override
     public boolean supports(AuthenticationToken token) {
@@ -64,17 +61,18 @@ public class ShiroRealm extends AuthorizingRealm {
         String token = (String) authenticationToken.getCredentials();
         try {
             if (token == null) {
-                throw new AuthenticationException("token为空");
+                // throw new AuthenticationException("token为空");
+                return null;
             }
             int id = tokenService.getUserId(token);
 
-            Account account = accountService.getAccountById(id);
+            SysUser sysUser = sysUserMapper.getUserById(id);
 
-            if (account == null) {
+            if (sysUser == null) {
                 throw new TokenException("用户不存在");
             }
 
-            tokenService.validToken(token, account.getPassword(), AccountServiceImpl.shortExp);
+            tokenService.validToken(token, sysUser.getPassword(), AccountServiceImpl.shortExp);
             return new SimpleAuthenticationInfo(token, token, "my_realm");
         } catch (Exception e) {
             Throwables.throwIfUnchecked(e);

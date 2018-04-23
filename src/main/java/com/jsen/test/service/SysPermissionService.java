@@ -15,4 +15,7 @@ import com.jsen.test.utils.ResponseBase;
 public interface SysPermissionService extends IService<SysPermission> {
     ResponseBase createPermission(String permission);
     ResponseBase deletePermission(String permission);
+    ResponseBase listPermission(int page, int capacity);
+
+    ResponseBase listAll();
 }

@@ -3,6 +3,7 @@ package com.jsen.test.entity;
 import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.annotations.TableId;
 import java.io.Serializable;
+import java.util.List;
 
 import com.baomidou.mybatisplus.annotations.Version;
 
@@ -28,6 +29,8 @@ public class SysRole implements Serializable {
     private Integer id;
     private String value;
     private Integer state;
+    private List<SysPermission> sysPermissionList;
+    private List<HcTable> hcTableList;
 
 
 }

@@ -24,6 +24,8 @@ import java.util.Map;
  *
  * @author ${User}
  * @since 2018/4/2
+ *
+ * 要注意配置文件的profile一定要在下面primary数据源中
  */
 @Configuration
 // @MapperScan("com.jsen.test.mapper")
@@ -42,9 +44,15 @@ public class MulMyBatisConf {
         return DataSourceBuilder.create().build();
     }
 
+    @Bean(name = "dbSCS")
+    @ConfigurationProperties(prefix = "spring.datasource.scsdb")
+    public DataSource dataSourceScsDB() {
+        return DataSourceBuilder.create().build();
+    }
+
     @Bean(name = "db3DS")
     @ConfigurationProperties(prefix = "spring.datasource.db3")
-    @Profile("readwrite")
+    @Profile({"readwrite", "remote"})
     public DataSource dataSource3() {
         return DataSourceBuilder.create().build();
     }
@@ -52,10 +60,11 @@ public class MulMyBatisConf {
     @Bean("dataSource")
     @Primary
     @Profile({"local", "localw", "scs", "scsw"})
-    public DataSource dataSource(@Qualifier("db1DS") DataSource dataSource1, @Qualifier("db2DS") DataSource dataSource2) {
+    public DataSource dataSource(@Qualifier("db1DS") DataSource dataSource1, @Qualifier("db2DS") DataSource dataSource2, @Qualifier("dbSCS") DataSource dataSource3) {
         Map<Object, Object> targetDatasources = Maps.newHashMap();
         targetDatasources.put(DbTypes.DB1, dataSource1);
         targetDatasources.put(DbTypes.DB2, dataSource2);
+        targetDatasources.put(DbTypes.SCS1, dataSource3);
 
         DynamicDatasource dynamicDatasource = new DynamicDatasource();
         dynamicDatasource.setTargetDataSources(targetDatasources);
@@ -64,13 +73,18 @@ public class MulMyBatisConf {
         return dynamicDatasource;
     }
 
+    /**
+     * 这些profile支持读写分离
+     * 在DB1上写（master） 在DB3上读（slave）
+      */
     @Bean("dataSource")
     @Primary
-    @Profile({"readwrite"})
-    public DataSource dataSource2(@Qualifier("db1DS") DataSource dataSource1, @Qualifier("db2DS") DataSource dataSource2, @Qualifier("db3DS") DataSource dataSource3) {
+    @Profile({"readwrite", "remote"})
+    public DataSource dataSource2(@Qualifier("db1DS") DataSource dataSource1, @Qualifier("db2DS") DataSource dataSource2, @Qualifier("dbSCS") DataSource dataSourceScs, @Qualifier("db3DS") DataSource dataSource3) {
         Map<Object, Object> targetDatasources = Maps.newHashMap();
         targetDatasources.put(DbTypes.DB1, dataSource1);
         targetDatasources.put(DbTypes.DB2, dataSource2);
+        targetDatasources.put(DbTypes.SCS1, dataSourceScs);
         targetDatasources.put(DbTypes.DB3, dataSource3);
 
         DynamicDatasource dynamicDatasource = new DynamicDatasource();
@@ -80,7 +94,7 @@ public class MulMyBatisConf {
         return dynamicDatasource;
     }
 
-    @Bean
+    @Bean("sqlSessionFactory")
     public SqlSessionFactory sqlSessionFactory(DataSource dataSource) throws Exception {
         SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
         // 使用titan数据源, 连接titan库

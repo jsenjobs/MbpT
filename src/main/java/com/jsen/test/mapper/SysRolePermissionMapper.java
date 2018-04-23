@@ -1,7 +1,12 @@
 package com.jsen.test.mapper;
 
+import com.jsen.test.entity.SysPermission;
+import com.jsen.test.entity.SysRole;
 import com.jsen.test.entity.SysRolePermission;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -11,8 +16,16 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * @author jsen
  * @since 2018-04-08
  */
+@Service
 public interface SysRolePermissionMapper extends BaseMapper<SysRolePermission> {
-    int createRolePermission(SysRolePermission sysRolePermission);
+    int insertRolePermission(SysRolePermission sysRolePermission);
 
-    int deleteRolePermissionById(int id);
+    int deleteRolePermissionByRoleIdAndPermissionId(int roleId, int permissionId);
+
+    int deleteRolePermissionByRId(int id);
+    int deleteRolePermissionByPId(int id);
+
+    List<SysPermission> listPermissionByRId(int id);
+
+    SysRolePermission getPermissionByRoleIdAndPermissionId(int role_id, int permission_id);
 }

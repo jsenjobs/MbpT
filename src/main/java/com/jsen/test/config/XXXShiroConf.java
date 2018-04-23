@@ -12,7 +12,6 @@ import org.apache.shiro.mgt.DefaultSessionStorageEvaluator;
 import org.apache.shiro.mgt.DefaultSubjectDAO;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
-import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
@@ -50,12 +49,13 @@ public class XXXShiroConf {
 
 
     @Bean("shiroFilter")
-    public JShiroFilterFactoryBean factory(DefaultWebSecurityManager securityManager) {
+    public JShiroFilterFactoryBean shiroFilterFactoryBean(DefaultWebSecurityManager securityManager) {
         JShiroFilterFactoryBean factoryBean = new JShiroFilterFactoryBean();
 
         factoryBean.setSecurityManager(securityManager);
 
-        factoryBean.setLoginUrl("/pub/loginFailed");
+        // factoryBean.setLoginUrl("/pub/loginFailed");
+        // factoryBean.setUnauthorizedUrl("/pub/loginFailed");
 
         //配置shiro默认登录界面地址，前后端分离中登录界面跳转应由前端路由控制，后台仅返回json数据
         // factoryBean.setLoginUrl("/account/login/**");
@@ -96,6 +96,7 @@ public class XXXShiroConf {
         factoryBean.setFilterChainDefinitionMap(getSysFilterChainService().listAll());
 
         // factoryBean.setFilterChainDefinitionMap(filterRuleMap);
+        factoryBean.setUnauthorizedUrl("/pub/loginFailed");
 
         return factoryBean;
     }

@@ -28,6 +28,7 @@ public class TokenServiceImpl implements TokenService {
         long nowMills = System.currentTimeMillis(); //生成JWT的时间
         Date now = new Date(nowMills);
 
+        System.out.println(data);
         JWTCreator.Builder builder = JWT.create()
                 // 创建payload的私有声明（根据特定的业务需要添加，如果要拿这个做验证，一般是需要和jwt的接收方提前沟通好验证方式的）
                 .withClaim("id", data.getIntValue("id"))
@@ -76,6 +77,7 @@ public class TokenServiceImpl implements TokenService {
     @Override
     public int getUserId(String token) {
         DecodedJWT jwt = JWT.decode(token);
+        System.out.println(jwt.getClaim("username").asString());
         return jwt.getClaim("id").asInt();
     }
 

@@ -9,12 +9,36 @@
     <resultMap id="BaseResultMap" type="com.jsen.test.entity.SysPermission">
         <id column="id" property="id" />
         <result column="permission" property="permission" />
+        <result column="comment" property="comment" />
+        <result column="type" property="type" />
+        <result column="order" property="order" />
     </resultMap>
-    <insert id="createPermission" parameterType="com.jsen.test.entity.SysPermission">
+    <insert id="insertPermission" parameterType="com.jsen.test.entity.SysPermission">
         INSERT INTO sys_permission(permission) VALUES(#{permission})
     </insert>
 
     <delete id="deletePermission" parameterType="java.lang.String">
         DELETE FROM sys_permission WHERE permission=#{arg0}
     </delete>
+
+    <select id="listPage" resultType="com.jsen.test.entity.SysPermission">
+        SELECT * FROM sys_permission ORDER BY `order`
+    </select>
+
+    <select id="listAll" resultType="com.jsen.test.entity.SysPermission">
+        SELECT * FROM sys_permission ORDER BY `order`
+    </select>
+
+    <select id="countPermission" resultType="java.lang.Integer">
+        SELECT COUNT(*) FROM sys_permission
+    </select>
+
+
+    <select id="getPermissionByPermission" parameterType="java.lang.String" resultType="com.jsen.test.entity.SysPermission">
+        SELECT * FROM sys_permission WHERE permission=#{arg0} LIMIT 1
+    </select>
+
+    <select id="getPermissionById" parameterType="java.lang.Integer" resultType="com.jsen.test.entity.SysPermission">
+        SELECT * FROM sys_permission WHERE id=#{arg0}
+    </select>
 </mapper>

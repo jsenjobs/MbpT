@@ -9,8 +9,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-@Aspect
-@Component
+/**
+ * 读写分离，自动切换的AOP
+ * 根据方法前缀
+ */
+// @Aspect
+// @Component
 public class ReadWriteAspect {
     private static final Logger logger = LoggerFactory.getLogger(ReadWriteAspect.class);
 
@@ -42,6 +46,8 @@ public class ReadWriteAspect {
 
             logger.warn("slaveAround end exception...");
             return null;
+        } finally {
+            DataSourceContextHolder.clearDB();
         }
     }
 
@@ -61,6 +67,8 @@ public class ReadWriteAspect {
 
             logger.warn("masterAround end exception...");
             return null;
+        } finally {
+            DataSourceContextHolder.clearDB();
         }
     }
 

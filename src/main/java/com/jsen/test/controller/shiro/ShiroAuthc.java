@@ -24,8 +24,8 @@ public class ShiroAuthc {
         return ResponseBase.create().code(0).msg("公共资源");
     }
     @GetMapping("/admin")
-    @RequiresPermissions("userInfo:add")//权限管理;
-    @RequiresRoles("custom")
+    // @RequiresPermissions("userInfo:add")//权限管理;
+    @RequiresRoles("admin")
     public ResponseBase admin() {
         return ResponseBase.create().code(0).msg("admin角色");
     }

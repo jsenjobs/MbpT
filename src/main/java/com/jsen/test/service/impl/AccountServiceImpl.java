@@ -29,10 +29,6 @@ import java.util.List;
 @Service
 public class AccountServiceImpl implements AccountService {
 
-    public AccountServiceImpl() {
-        System.err.println("OOK");
-    }
-
     @Autowired
     TokenService tokenService;
     @Autowired

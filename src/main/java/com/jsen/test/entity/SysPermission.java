@@ -28,5 +28,10 @@ public class SysPermission implements Serializable {
     private Integer id;
     private String permission;
 
+    private String comment;
+
+    private Integer type;
+    private Integer order;
+
 
 }
