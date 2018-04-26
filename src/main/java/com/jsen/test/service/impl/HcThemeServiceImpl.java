@@ -55,12 +55,17 @@ public class HcThemeServiceImpl extends ServiceImpl<HcThemeMapper, HcTheme> impl
 
     @Override
     public ResponseBase delTopic(Integer parentId) {
-        return ResponseBase.create().code(0).add("TBeff", baseMapper.deleteThemeTableByThemeParentId(parentId)).add("Teff", baseMapper.deleteTopicByParentId(parentId));
+        return ResponseBase.create().code(0)
+                .add("TBeff", baseMapper.deleteThemeTableByThemeParentId(parentId)) // 删除该主题的所有子主题下的所有表关联
+                .add("Teff", baseMapper.deleteTopicByParentId(parentId)) //删除该主题的所有子主题
+                .add("eff", baseMapper.deleteTopicById(parentId)); //删除该主题
     }
 
     @Override
     public ResponseBase delSubTopic(Integer id) {
-        return ResponseBase.create().code(0).add("TBeff", baseMapper.deleteThemeTableByThemeId(id)).add("Teff", baseMapper.deleteTopicById(id));
+        return ResponseBase.create().code(0)
+                .add("TBeff", baseMapper.deleteThemeTableByThemeId(id)) // 删除该子主题的所有表关联
+                .add("Teff", baseMapper.deleteTopicById(id)); // 删除该子主题
     }
 
     private void append(int userId, JSONArray tree, Integer treeId, List<HcTheme> themes) {
@@ -90,6 +95,8 @@ public class HcThemeServiceImpl extends ServiceImpl<HcThemeMapper, HcTheme> impl
             }
         } else {
             int id = hcTheme.getId();
+            System.out.println(id);
+            System.out.println(userId);
             node.put("_tables", hcTableService.listTablesByTopic(id, userId));
         }
 

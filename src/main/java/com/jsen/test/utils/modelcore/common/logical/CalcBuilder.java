@@ -2,8 +2,7 @@ package com.jsen.test.utils.modelcore.common.logical;
 
 import com.google.common.collect.Maps;
 import com.jsen.test.utils.modelcore.common.CalcType;
-import com.jsen.test.utils.modelcore.common.logical.builder.AbstractBuild;
-import com.jsen.test.utils.modelcore.common.logical.builder.ModeAggregationBuild;
+import com.jsen.test.utils.modelcore.common.logical.builder.*;
 
 import java.util.Map;
 
@@ -19,6 +18,13 @@ public class CalcBuilder {
 
     static {
         builderMap.put(CalcType.ModeAggregation, new ModeAggregationBuild());
+        builderMap.put(CalcType.AddColumns, new ModelAddColumnBuild());
+        builderMap.put(CalcType.ChangeColumn, new ModelChangeColumnBuild());
+
+
+        builderMap.put(CalcType.AggJoin, new ModelInnerJoinBuild());
+        builderMap.put(CalcType.LeftJoin, new ModelInnerJoinBuild());
+        builderMap.put(CalcType.FullJoin, new ModelFullJoinBuild());
     }
 
     public static AbstractBuild getBuild(CalcType calcType) {

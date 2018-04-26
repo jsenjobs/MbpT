@@ -1,5 +1,8 @@
 package com.jsen.test.controller.hc;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.jsen.test.constants.ConstantResponse;
 import com.jsen.test.service.HcTableService;
 import com.jsen.test.utils.ResponseBase;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,6 +59,19 @@ public class HcTableController {
             @PathVariable("roleId") Integer roleId
     ) {
         return hcTableService.tableAddRole(tableId, roleId);
+    }
+
+    @GetMapping("/tables/role/{tableIds}/{roleId}")
+    public ResponseBase tableAddRoles(
+            @PathVariable("tableIds") String tableIds,
+            @PathVariable("roleId") Integer roleId
+    ) {
+        try {
+            JSONArray array = JSON.parseArray(tableIds);
+            return hcTableService.tablesAddRole(array, roleId);
+        } catch (Exception e) {
+            return ConstantResponse.FAIL.msg("JSON格式转换出错");
+        }
     }
 
     @GetMapping("/table/topic/{tableIds}/{topicId}")

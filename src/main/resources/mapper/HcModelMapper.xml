@@ -28,12 +28,20 @@
         WHERE id=#{id}
     </update>
 
+    <delete id="clearAllDataByUserId" parameterType="java.lang.Integer">
+        DELETE FROM hc_model WHERE creator=#{arg0}
+    </delete>
+
     <select id="findModelByUserId" resultMap="BaseResultMap">
         SELECT * FROM hc_model WHERE creator=#{arg0}
     </select>
 
     <select id="findModelByModelIdAndCreatorId" resultMap="BaseResultMap">
         SELECT * FROM hc_model WHERE id=#{arg0} AND creator=#{arg1}
+    </select>
+
+    <select id="findModelByName" parameterType="java.lang.String" resultMap="BaseResultMap">
+        SELECT * FROM hc_model WHERE name=#{arg0}
     </select>
 
     <select id="countByName" resultType="java.lang.Integer">

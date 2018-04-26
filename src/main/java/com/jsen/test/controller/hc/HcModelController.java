@@ -35,6 +35,12 @@ public class HcModelController {
         return hcModelService.updateById(modelId, name, intro, modelData);
     }
 
+    @GetMapping("/model/reset")
+    public ResponseBase reset(HttpServletRequest request) {
+        int id = tokenService.getUserId(request.getHeader("Authorization"));
+        return hcModelService.clearAllDataByUserId(id);
+    }
+
     @GetMapping("/model/find")
     public ResponseBase createModel(HttpServletRequest request) {
         int id = tokenService.getUserId(request.getHeader("Authorization"));

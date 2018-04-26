@@ -15,7 +15,6 @@ import lombok.Data;
 import lombok.experimental.Accessors;
 
 import java.util.List;
-import java.util.UUID;
 
 /**
  * <p>
@@ -58,6 +57,10 @@ public class Node {
 
     CalcModeBase calcModeBase;
     String tableName;
+    /**
+     * 对于DataSource类型需要一个viewTableName字段来保存其执行视图，其他的计算节点的tableName即为其视图
+     */
+    String viewTableName;
     JSONArray tableFilter;
 
 
@@ -70,14 +73,32 @@ public class Node {
     /**
      * 中间步骤创建视图名字
      */
-    String viewTableName;
+    // String viewTableName;
     /**
      * 该Node的执行SQL 执行sql不包含CREATE VIEW 语句，单纯只是数据库执行并返回数据，在需要视图的时候 返回视图SQL
      */
     String sql;
 
-    public String genViewSQL() {
-        return "CREATE VIEW " + viewTableName + " AS " + sql;
+    public String genExecSql() {
+        if (modelType == ModelType.DataSource) {
+            return "CREATE OR REPLACE VIEW " + viewTableName + " AS " + sql;
+
+        } else {
+            return "CREATE OR REPLACE VIEW " + tableName + " AS " + sql;
+        }
+    }
+
+    /**
+     * 最后一个Node直接list所有数据
+     * @return
+     */
+    public String genListViewTableSql() {
+        if (modelType == ModelType.DataSource) {
+            return "SELECT * FROM " + viewTableName;
+
+        } else {
+            return "SELECT * FROM " + tableName;
+        }
     }
 
 
@@ -85,7 +106,7 @@ public class Node {
      * 循环遍历
      * 首先完全按照模型创建树，最后shrink所有Union节点
     */
-    public Node parseSelf(Finder finder, JSONObject tableFilters, JSONArray datas, JSONArray unionDatas, JSONArray links, JSONObject selfModel) {
+    public Node parseSelf(Finder finder, JSONObject tableFilters, JSONArray datas, JSONArray unionDatas, JSONArray links, JSONObject selfModel, JSONObject dynamicValues) {
         if(selfModel == null) {
             this.setBad(true);
             return this;
@@ -105,10 +126,16 @@ public class Node {
                 return this;
             }
             this.setCalcModeBase(build.build(workConf));
+        } else if (modelType == ModelType.DataSource) {
+            this.viewTableName = workConf.getString(ConfKeys.viewTableName);
         }
         this.uuid = selfModel.getString(ConfKeys.id);
         this.tableName = workConf.getString(ConfKeys.tableName);
         this.tableFilter = tableFilters.getJSONArray(this.tableName);
+        System.out.println(this.tableFilter);
+        System.out.println(dynamicValues);
+        replaceAllDynamicValue(this.tableFilter, dynamicValues);
+        System.err.println(this.tableFilter);
 
         // parse parent
 
@@ -119,7 +146,7 @@ public class Node {
         List<Node> pcs = Lists.newArrayList();
         Node n;
         for (JSONObject parent: parents) {
-            n = new Node().parseSelf(finder, tableFilters, datas, unionDatas, links, parent);
+            n = new Node().parseSelf(finder, tableFilters, datas, unionDatas, links, parent, dynamicValues);
             if(!n.isBad()) {
                 n.setChild(this);
                 pcs.add(n);
@@ -127,6 +154,29 @@ public class Node {
         }
         this.setParents(pcs);
         return this;
+    }
+    private void replaceAllDynamicValue(JSONArray tableFilter, JSONObject dynamicValues) {
+        if(tableFilter == null) {
+            return;
+        }
+        for (int i = 0; i < tableFilter.size(); i++) {
+            JSONObject obj = tableFilter.getJSONObject(i);
+            if (obj.getBoolean(ConfKeys.isGroup)) {
+                replaceAllDynamicValue(obj.getJSONArray(ConfKeys._left), dynamicValues);
+                replaceAllDynamicValue(obj.getJSONArray(ConfKeys._right), dynamicValues);
+            } else {
+                if (obj.getBoolean(ConfKeys.isDynamicValue)) {
+                    String name = obj.getString(ConfKeys.dynamicName);
+                    if (dynamicValues.containsKey(name)) {
+                        Object value = dynamicValues.get(name);
+                        if (value != null && value.toString().trim().length() > 0) {
+                            obj.put(ConfKeys.right, value.toString());
+                        }
+                    }
+                }
+            }
+        }
+
     }
 
     /**
@@ -175,11 +225,11 @@ public class Node {
             }
             String sql = "SELECT * FROM " + getTableName() + filterSQL + " LIMIT 0,20";
             setSql(sql);
-            setViewTableName(UUID.randomUUID().toString().replaceAll("-", ""));
+            // setViewTableName(UUID.randomUUID().toString().replaceAll("-", ""));
         } else if (ModelType.Calc == modelType) {
             if (calcModeBase != null) {
                 setSql(calcModeBase.genSQL(this));
-                setViewTableName(UUID.randomUUID().toString().replaceAll("-", ""));
+                // setViewTableName(UUID.randomUUID().toString().replaceAll("-", ""));
             }
         }
     }
@@ -192,7 +242,7 @@ public class Node {
                 builder.append(parent);
             }
         }
-        builder.append("type: " + this.getModelType() + "\ntableName: " + this.getTableName() + "\nSQL: " + this.getSql() + "\nviewTableSQL: " + genViewSQL() + "\n");
+        builder.append("type: " + this.getModelType() + "\ntableName: " + this.getTableName() + "\nSQL: " + this.getSql() + "\nviewTableSQL: " + genExecSql() + "\n");
         return builder.toString();
     }
 

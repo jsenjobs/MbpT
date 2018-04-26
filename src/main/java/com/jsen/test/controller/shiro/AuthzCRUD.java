@@ -1,5 +1,8 @@
 package com.jsen.test.controller.shiro;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.jsen.test.constants.ConstantResponse;
 import com.jsen.test.entity.SysFilterChain;
 import com.jsen.test.entity.SysUser;
 import com.jsen.test.service.*;
@@ -81,6 +84,15 @@ public class AuthzCRUD {
     public ResponseBase addRoleToUser(@PathVariable("uid") int uid, @PathVariable("rid") int rid) {
         return sysUserRoleService.createUserRole(uid, rid);
     }
+    @GetMapping("/create/uars/{uid}/{rids}")
+    public ResponseBase addRolesToUser(@PathVariable("uid") int uid, @PathVariable("rids") String rids) {
+        try {
+            JSONArray array = JSON.parseArray(rids);
+            return sysUserRoleService.createUserRoles(uid, array);
+        } catch (Exception e) {
+            return ConstantResponse.FAIL.msg("JSON格式转换出错");
+        }
+    }
     @GetMapping("/delete/uar/{user_id}/{role_id}")
     public ResponseBase deleteRoleToUser(@PathVariable("user_id") int user_id, @PathVariable("role_id") int role_id) {
         return sysUserRoleService.deleteUserRole(user_id, role_id);
@@ -90,6 +102,15 @@ public class AuthzCRUD {
     @GetMapping("/create/rap/{rid}/{pid}")
     public ResponseBase addPermissionToRole(@PathVariable("rid") int rid, @PathVariable("pid") int pid) {
         return sysRolePermissionService.createRolePermission(rid, pid);
+    }
+    @GetMapping("/create/raps/{rid}/{pids}")
+    public ResponseBase addPermissionsToRole(@PathVariable("rid") int rid, @PathVariable("pids") String pids) {
+        try {
+            JSONArray array = JSON.parseArray(pids);
+            return sysRolePermissionService.createRolePermissions(rid, array);
+        } catch (Exception e) {
+            return ConstantResponse.FAIL.msg("JSON格式转换出错");
+        }
     }
     @GetMapping("/delete/rap/{role_id}/{permission_id}")
     public ResponseBase deletePermissionToRole(@PathVariable("role_id") int role_id, @PathVariable("permission_id") int permission_id) {

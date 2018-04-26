@@ -1,5 +1,6 @@
 package com.jsen.test.service.impl;
 
+import com.alibaba.fastjson.JSONArray;
 import com.jsen.test.entity.SysPermission;
 import com.jsen.test.entity.SysRole;
 import com.jsen.test.entity.SysRolePermission;
@@ -37,6 +38,23 @@ public class SysRolePermissionServiceImpl extends ServiceImpl<SysRolePermissionM
         int eff = baseMapper.insertRolePermission(new SysRolePermission().setRoleId(r_id).setPermissionId(p_id));
         SysPermission sysPermission = sysPermissionMapper.getPermissionById(p_id);
         return ResponseBase.create().code(0).add("eff", eff).add("data", sysPermission);
+    }
+
+    @Override
+    public ResponseBase createRolePermissions(int r_id, JSONArray p_idList) {
+        int eff = 0;
+        JSONArray array = new JSONArray();
+        for(int i = 0; i < p_idList.size(); i++) {
+            int p_id = p_idList.getInteger(i);
+            if (baseMapper.getPermissionByRoleIdAndPermissionId(r_id, p_id) == null) {
+                if (baseMapper.insertRolePermission(new SysRolePermission().setRoleId(r_id).setPermissionId(p_id)) == 1) {
+                    eff ++;
+                    SysPermission sysPermission = sysPermissionMapper.getPermissionById(p_id);
+                    array.add(sysPermission);
+                }
+            }
+        }
+        return ResponseBase.create().code(0).add("eff", eff).add("data", array);
     }
 
     @Override

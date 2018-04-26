@@ -1,13 +1,9 @@
 package com.jsen.test.controller.hc.task;
 
-import com.jsen.test.service.DynamicPreCoreService;
+import com.jsen.test.service.ScsWorkService;
 import com.jsen.test.utils.ResponseBase;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -22,13 +18,13 @@ import org.springframework.web.bind.annotation.RestController;
 class PreTaskController {
 
     @Autowired
-    DynamicPreCoreService dynamicPreCoreService;
+    ScsWorkService scsWorkService;
 
     // 显示数据源中的表数据
-    @GetMapping("/table/list/{tableName}/{page}/{limit}/{columns}")
-    public ResponseBase listTableData(@PathVariable("tableName") String tableName, @PathVariable("columns") String columns,
+    @GetMapping("/table/list/{tableName}/{page}/{limit}")
+    public ResponseBase listTableData(@PathVariable("tableName") String tableName, @RequestParam(value = "query", required = false) String query,
                                @PathVariable("page") Integer page, @PathVariable("limit") Integer limit) {
-        return dynamicPreCoreService.listTableData(tableName, page, limit, columns);
+        return scsWorkService.listTableData(tableName, page, limit, query);
     }
 
 }

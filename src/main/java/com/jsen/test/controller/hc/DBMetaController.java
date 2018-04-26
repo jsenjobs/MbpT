@@ -1,6 +1,6 @@
 package com.jsen.test.controller.hc;
 
-import com.jsen.test.service.DBMetaService;
+import com.jsen.test.service.ScsWorkService;
 import com.jsen.test.utils.ResponseBase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,15 +18,15 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/dbMeta")
 public class DBMetaController {
     @Autowired
-    private DBMetaService dbMetaService;
+    private ScsWorkService scsWorkService;
 
     @GetMapping("/columns/{tableName}")
     public ResponseBase listTables(@PathVariable("tableName") String tableName) {
-        return dbMetaService.listColumns(tableName);
+        return scsWorkService.listColumns(tableName);
     }
 
     @GetMapping("/tables/{dbName}")
     public ResponseBase listDbs(@PathVariable("dbName") String dbName) {
-        return dbMetaService.listTables(dbName);
+        return scsWorkService.listTables(dbName);
     }
 }

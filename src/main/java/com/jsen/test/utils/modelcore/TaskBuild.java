@@ -2,10 +2,6 @@ package com.jsen.test.utils.modelcore;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.jsen.test.mapper.DynamicPreCoreMapper;
-import com.jsen.test.mapper.HcModelMapper;
-import com.jsen.test.service.DynamicPreCoreService;
-import com.jsen.test.service.impl.HcModelCoreTaskServiceImpl;
 import com.jsen.test.utils.modelcore.common.ConfKeys;
 import com.jsen.test.utils.modelcore.common.ModelType;
 import com.jsen.test.utils.modelcore.help.Finder;
@@ -32,7 +28,7 @@ public class TaskBuild {
     @Autowired
     Finder finder;
 
-    public Node buildTree(JSONObject modelData, String uuid) {
+    public Node buildTree(JSONObject modelData, String uuid, JSONObject dynamicValues) {
         JSONArray datas = finder.findDatas(modelData);
         JSONArray unionDatas = finder.findUnionDatas(modelData);
         JSONArray links = finder.findLinks(modelData);
@@ -50,7 +46,7 @@ public class TaskBuild {
             return null;
         }
         Node node = new Node();
-        node.parseSelf(finder, tableFilters, datas, unionDatas, links, modelConf);
+        node.parseSelf(finder, tableFilters, datas, unionDatas, links, modelConf, dynamicValues);
         if(node.isBad()) {
             return null;
         }

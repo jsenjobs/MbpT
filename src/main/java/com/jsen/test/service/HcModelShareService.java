@@ -1,5 +1,6 @@
 package com.jsen.test.service;
 
+import com.alibaba.fastjson.JSONObject;
 import com.jsen.test.utils.ResponseBase;
 
 /**
@@ -11,12 +12,24 @@ import com.jsen.test.utils.ResponseBase;
  */
 public interface HcModelShareService {
 
-    ResponseBase listAll();
-    ResponseBase save(byte[] modelData, int creator, String name, String intro);
-    ResponseBase save(int modelId, int creator, String name, String intro);
+    /**
+     *
+     * @param id sys_user id
+     * @return
+     */
+    ResponseBase listAll(Integer id);
+    ResponseBase save(byte[] modelData, int creator, String name, String intro, Integer type);
+    ResponseBase save(int modelId, int creator, String name, String intro, Integer type);
 
     ResponseBase updateModelBy(String shareModelName, Integer creatorId, Integer modelId);
 
 
     ResponseBase deleteShareModelById(Integer id);
+
+    /**
+     * id是share model数据表的ID
+     * @param id
+     * @return
+     */
+    ResponseBase execModel(Integer id, JSONObject dynamicValues);
 }

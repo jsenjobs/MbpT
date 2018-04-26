@@ -15,6 +15,7 @@ import com.jsen.test.utils.ResponseBase;
 public interface HcModelService extends IService<HcModel> {
     ResponseBase create(String name, String intro, String modelData, int creator);
     ResponseBase updateById(int modelId, String name, String intro, String modelData);
+    ResponseBase clearAllDataByUserId(int uId);
 
     ResponseBase findByUserId(int userId);
 

@@ -1,5 +1,6 @@
 package com.jsen.test.service.impl;
 
+import com.alibaba.fastjson.JSONArray;
 import com.jsen.test.entity.SysRole;
 import com.jsen.test.entity.SysUserRole;
 import com.jsen.test.mapper.SysRoleMapper;
@@ -34,6 +35,23 @@ public class SysUserRoleServiceImpl extends ServiceImpl<SysUserRoleMapper, SysUs
         int eff = baseMapper.insertUserRole(new SysUserRole().setRoleId(r_id).setUserId(u_id));
         SysRole sysRole = sysRoleMapper.getRoleById(r_id);
         return ResponseBase.create().code(0).add("eff", eff).add("data", sysRole);
+    }
+
+    @Override
+    public ResponseBase createUserRoles(int u_id, JSONArray r_ids) {
+        int eff = 0;
+        JSONArray array = new JSONArray();
+        for(int i = 0; i < r_ids.size(); i++) {
+            int r_id = r_ids.getInteger(i);
+            if (baseMapper.getRoleByUIdAndRId(u_id, r_id) == null) {
+                if (baseMapper.insertUserRole(new SysUserRole().setRoleId(r_id).setUserId(u_id)) == 1) {
+                    eff ++;
+                    SysRole sysRole = sysRoleMapper.getRoleById(r_id);
+                    array.add(sysRole);
+                }
+            }
+        }
+        return ResponseBase.create().code(0).add("eff", eff).add("data", array);
     }
 
     @Override

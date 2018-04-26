@@ -31,6 +31,7 @@ public class SysUser implements Serializable {
     private Integer id;
     private String name;
     private String password;
+    private Integer sex;
     private List<SysRole> sysRoleList;
 
 

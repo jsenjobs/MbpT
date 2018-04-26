@@ -12,5 +12,5 @@ import com.jsen.test.utils.ResponseBase;
 public interface HcModelCoreTaskService {
     ResponseBase execPart(Integer id, String uuid);
 
-    ResponseBase execAll(Integer id);
+    ResponseBase execModel(Integer modelId);
 }

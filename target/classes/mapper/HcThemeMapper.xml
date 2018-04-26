@@ -37,7 +37,7 @@
     </delete>
 
     <delete id="deleteTopicByParentId" parameterType="java.lang.Integer">
-        DELETE FROM hc_theme WHERE id=#{arg0} OR parent=#{arg0}
+        DELETE FROM hc_theme WHERE parent=#{arg0}
     </delete>
 
     <delete id="deleteTopicById" parameterType="java.lang.Integer">

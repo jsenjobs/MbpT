@@ -6,6 +6,8 @@ import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.jsen.test.entity.HcTable;
 import com.jsen.test.entity.HcTheme;
+import com.jsen.test.entity.SysPermission;
+import com.jsen.test.entity.SysRolePermission;
 import com.jsen.test.mapper.HcTableMapper;
 import com.jsen.test.mapper.HcThemeMapper;
 import com.jsen.test.service.HcTableService;
@@ -69,6 +71,24 @@ public class HcTableServiceImpl extends ServiceImpl<HcTableMapper, HcTable> impl
             return ResponseBase.create().code(1).msg("关联已存在");
         }
         return ResponseBase.create().code(0).add("eff", baseMapper.insertRoleTable(tableId, roleId)).data(baseMapper.getTableById(tableId));
+    }
+
+    @Override
+    public ResponseBase tablesAddRole(JSONArray tableIds, Integer roleId) {
+
+
+        int eff = 0;
+        JSONArray array = new JSONArray();
+        for(int i = 0; i < tableIds.size(); i++) {
+            int tableId = tableIds.getInteger(i);
+            if (baseMapper.findExistRoleTable(tableId, roleId) == 0) {
+                if (baseMapper.insertRoleTable(tableId, roleId) == 1) {
+                    eff ++;
+                    array.add(baseMapper.getTableById(tableId));
+                }
+            }
+        }
+        return ResponseBase.create().code(0).add("eff", eff).add("data", array);
     }
 
     @Override

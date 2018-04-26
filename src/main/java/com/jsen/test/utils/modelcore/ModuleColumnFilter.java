@@ -36,6 +36,7 @@ public class ModuleColumnFilter {
         funcMaps = Maps.newHashMap();
         funcMaps.put("eq", "=");
         funcMaps.put("lt", "<");
+        funcMaps.put("gt", ">");
         funcMaps.put("gteq", ">=");
         funcMaps.put("lteq", "<=");
         funcMaps.put("noteq", "<>");

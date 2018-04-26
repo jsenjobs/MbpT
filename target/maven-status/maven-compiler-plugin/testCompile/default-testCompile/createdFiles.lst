@@ -1,5 +1,6 @@
 com/jsen/test/utils/MD5UtilTest.class
 com/jsen/test/utils/help/ProfilesResolverLocal.class
+com/jsen/test/JSONArrayTest.class
 com/jsen/test/service/DatacontainerServiceTest.class
 TokenTest.class
 com/jsen/test/core/SqlParseTest.class

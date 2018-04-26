@@ -21,9 +21,13 @@ public interface HcModelMapper extends BaseMapper<HcModel> {
 
     int updateModel(HcModel hcModel);
 
+    int clearAllDataByUserId(Integer uId);
+
     List<HcModel> findModelByUserId(int userId);
 
     HcModel findModelByModelIdAndCreatorId(Integer id, Integer creator);
+
+    HcModel findModelByName(String modelName);
 
     int countByName(String name);
 

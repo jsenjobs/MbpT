@@ -22,12 +22,16 @@ public interface HcModelShareMapper {
     List<HcModelShare> listByCreator(Integer creator);
 
     HcModelShare findByShareModelNameAndCreatorId(String shareModelName, Integer creatorId);
+    HcModelShare findShareModelById(Integer id);
 
     int countByName(String shareModelName);
 
     List<HcModelShare> listAll();
+    List<HcModelShare> listAllSimple(Integer id);
 
     int updateShareModelNameByName(String oldName, String newName);
 
     int deleteShareModelById(Integer id);
+
+    int updateShareModelCollectLookById(Integer id, Integer collect, Integer look);
 }

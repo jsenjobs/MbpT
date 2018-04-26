@@ -11,9 +11,11 @@ package com.jsen.test.utils.modelcore.common;
  */
 public enum CalcType {
     ModeAggregation,
-    Trans,
     AddColumns,
+    Trans,
     ChangeColumn,
+
+
     AggJoin,
     LeftJoin,
     FullJoin,

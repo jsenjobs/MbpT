@@ -1,6 +1,7 @@
 package com.jsen.test.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
+import com.jsen.test.constants.ConstantResponse;
 import com.jsen.test.entity.HcModel;
 import com.jsen.test.mapper.HcModelMapper;
 import com.jsen.test.mapper.HcModelShareMapper;
@@ -32,10 +33,16 @@ public class HcModelServiceImpl extends ServiceImpl<HcModelMapper, HcModel> impl
     @Override
     public ResponseBase create(String name, String intro, String modelData, int creator) {
         if (baseMapper.countByName(name) > 0) {
-            return ResponseBase.create().code(0).msg("模型存在");
+            return ResponseBase.create().code(0).msg("模型存在， 请重命名文件");
         }
         HcModel hcModel = new HcModel().setCreator(creator).setIntro(intro).setName(name).setModelData(modelData.getBytes());
-        return ResponseBase.create().code(0).add("eff", baseMapper.saveModel(hcModel));
+        int eff = baseMapper.saveModel(hcModel);
+        hcModel = baseMapper.findModelByName(name);
+        if (eff > 0 && hcModel != null) {
+            return ResponseBase.create().code(0).add("eff", eff).data(hcModel);
+        } else {
+            return ConstantResponse.FAIL.msg("保存模型失败");
+        }
     }
 
     @Override
@@ -52,6 +59,12 @@ public class HcModelServiceImpl extends ServiceImpl<HcModelMapper, HcModel> impl
         }
         hcModel.setId(modelId);
         return ResponseBase.create().code(0).add("eff", baseMapper.updateModel(hcModel));
+    }
+
+    @Override
+    public ResponseBase clearAllDataByUserId(int uId) {
+        int eff = baseMapper.clearAllDataByUserId(uId);
+        return ResponseBase.create().code(0).add("eff", eff);
     }
 
     @Override

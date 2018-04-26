@@ -1,5 +1,6 @@
 package com.jsen.test.service;
 
+import com.alibaba.fastjson.JSONArray;
 import com.jsen.test.entity.HcTable;
 import com.jsen.test.utils.ResponseBase;
 
@@ -24,6 +25,7 @@ public interface HcTableService {
     ResponseBase insertHcTable(String tableName, String metaName, String comment, String tag);
 
     ResponseBase tableAddRole(Integer tableId, Integer roleId);
+    ResponseBase tablesAddRole(JSONArray tableIds, Integer roleId);
     ResponseBase tablesAddTopic(String tableIds, Integer topicId);
 
     ResponseBase deleteRoleTable(int roleId, int tableId);

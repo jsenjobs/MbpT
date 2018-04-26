@@ -1,6 +1,7 @@
 package com.jsen.test.utils.modelcore.common.logical.model;
 
 import com.alibaba.fastjson.JSONArray;
+import com.jsen.test.utils.modelcore.common.ModelType;
 import com.jsen.test.utils.modelcore.model.Node;
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -47,6 +48,13 @@ public class ModeAggregation extends CalcModeBase {
     JSONArray columns;
 
 
+    private String getTableName(Node parent) {
+        if(parent.getModelType() == ModelType.DataSource) {
+            return parent.getViewTableName();
+        } else {
+            return parent.getTableName();
+        }
+    }
     @Override
     public String genSQL(Node node) {
         String func;
@@ -80,7 +88,7 @@ public class ModeAggregation extends CalcModeBase {
                         builder.append(",").append(notGroupColumns.getString(i));
                     }
                 }
-                builder.append(" FROM ").append(node.getParents().get(0).getViewTableName());
+                builder.append(" FROM ").append(getTableName(node.getParents().get(0)));
                 if (groupColumns != null && groupColumns.size() > 0) {
                     builder.append(" GROUP BY ");
                     len = groupColumns.size();
@@ -108,7 +116,7 @@ public class ModeAggregation extends CalcModeBase {
                         builder.append(",");
                     }
                 }
-                builder.append(" FROM ").append(node.getParents().get(0).getViewTableName());
+                builder.append(" FROM ").append(getTableName(node.getParents().get(0)));
                 break;
             case DISTINCT:
                 builder.append("SELECT DISTINCT ");
@@ -120,7 +128,7 @@ public class ModeAggregation extends CalcModeBase {
                             builder.append(",");
                         }
                     }
-                    builder.append(" FROM ").append(node.getParents().get(0).getViewTableName());
+                    builder.append(" FROM ").append(getTableName(node.getParents().get(0)));
                 } else {
                     return "";
                 }

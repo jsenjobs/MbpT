@@ -89,7 +89,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         try {
             String tk = tokenService.genToken(jsonObject, sysUser.getPassword(), shortExp);
             String rTk = tokenService.genToken(jsonObject, sysUser.getPassword(), LongExp);
-            return ResponseBase.create().code(0).add("token", tk).add("rToken", rTk).add("username", sysUser.getName()).add("id", sysUser.getId());
+            return ResponseBase.create().code(0).add("token", tk).add("rToken", rTk).add("username", sysUser.getName()).add("id", sysUser.getId()).add("sex", sysUser.getSex());
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
             return ResponseBase.create().code(1).msg("获取token失败");

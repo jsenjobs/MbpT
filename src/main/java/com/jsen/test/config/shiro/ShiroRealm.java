@@ -44,10 +44,10 @@ public class ShiroRealm extends AuthorizingRealm {
         Set<String> permissions = Sets.newHashSet();
         for (SysRole role:sysUserMapper.getRoleByUserId(id)) {
             simpleAuthorizationInfo.addRole(role.getValue());
-            System.out.println(role.getValue());
+            // System.out.println(role.getValue());
             for (SysPermission permission:sysUserMapper.getPermissionByRoleId(role.getId())) {
                 permissions.add(permission.getPermission());
-                System.out.println(permission.getPermission());
+                // System.out.println(permission.getPermission());
             }
         }
         simpleAuthorizationInfo.addStringPermissions(permissions);

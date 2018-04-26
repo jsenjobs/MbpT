@@ -1,5 +1,6 @@
 package com.jsen.test.service;
 
+import com.alibaba.fastjson.JSONArray;
 import com.jsen.test.entity.SysRolePermission;
 import com.baomidou.mybatisplus.service.IService;
 import com.jsen.test.utils.ResponseBase;
@@ -14,6 +15,7 @@ import com.jsen.test.utils.ResponseBase;
  */
 public interface SysRolePermissionService extends IService<SysRolePermission> {
     ResponseBase createRolePermission(int r_id, int p_id);
+    ResponseBase createRolePermissions(int r_id, JSONArray p_idList);
     ResponseBase deleteRolePermission(int roleId, int permissionId);
 
 }
