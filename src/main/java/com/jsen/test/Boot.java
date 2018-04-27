@@ -6,6 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication(exclude = {
@@ -13,8 +16,12 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 })
 @MapperScan("com.jsen.test.mapper")
 @EnableSwagger2
+
 // @EnableDiscoveryClient
-// @EnableEurekaClient
+
+@EnableEurekaClient
+@EnableZuulProxy
+@EnableFeignClients
 
 //
 // @EnableTransactionManagement

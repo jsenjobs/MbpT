@@ -5,6 +5,8 @@ import com.jsen.test.utils.ResponseBase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+
 
 /**
  * <p>
@@ -21,7 +23,8 @@ public class DBMetaController {
     private ScsWorkService scsWorkService;
 
     @GetMapping("/columns/{tableName}")
-    public ResponseBase listTables(@PathVariable("tableName") String tableName) {
+    public ResponseBase listTables(HttpServletRequest request, @PathVariable("tableName") String tableName) {
+        System.out.println(request.getHeader("Authorization"));
         return scsWorkService.listColumns(tableName);
     }
 

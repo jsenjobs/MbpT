@@ -78,6 +78,7 @@ com/jsen/test/service/SysRolePermissionService.class
 com/jsen/test/controller/aspect/Test002.class
 com/jsen/test/service/impl/SysUserServiceImpl.class
 com/jsen/test/service/RoleService.class
+com/jsen/test/service/EurekaTestService.class
 com/jsen/test/controller/shiro/ViewPathChecker.class
 com/jsen/test/controller/aspect/TestAspect.class
 com/jsen/test/entity/SysFilterChain.class

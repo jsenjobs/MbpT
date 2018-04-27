@@ -2,147 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1254b8b3-b69e-4c3e-b56a-aa9e8ccf97ce" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/HcModelGreatController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/entity/HcModelGreat.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/HcModelGreatMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/HcModelGreatService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/ScsWorkService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/HcModelGreatServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/scs/ScsWorkServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/builder/ModelAddColumnBuild.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/builder/ModelChangeColumnBuild.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/builder/ModelFullJoinBuild.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/builder/ModelInnerJoinBuild.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/builder/ModelLeftJoinBuild.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/model/ModelAddColumn.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/model/ModelChangeColumn.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/model/relation/JoinModelBase.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/model/relation/ModeFullJoin.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/model/relation/ModeInnerJoin.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/model/relation/ModeLeftExclude.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/model/relation/ModeLeftJoin.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/model/relation/ModeUnion.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DynamicCoreMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/mapper/HcModelGreatMapper.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/jsen/test/JSONArrayTest.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/jsen.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jsen.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/EurekaTestService.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/shiro/ShiroRealm.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/config/shiro/ShiroRealm.java" />
+      <change beforePath="$PROJECT_DIR$/MbpT.iml" afterPath="$PROJECT_DIR$/MbpT.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/Boot.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/Boot.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/cloud/TestEureka.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/cloud/TestEureka.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/DBMetaController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/DBMetaController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/HcModelController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/HcModelController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/HcModelShareController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/HcModelShareController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/HcTableController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/HcTableController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/task/CoreTaskController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/task/CoreTaskController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/task/PreTaskController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/task/PreTaskController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/shiro/AuthzCRUD.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/shiro/AuthzCRUD.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/entity/HcModelShare.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/entity/HcModelShare.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/entity/SysUser.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/entity/SysUser.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/DynamicCoreMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/DynamicCoreMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/HcModelMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/HcModelMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/HcModelShareMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/HcModelShareMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/DBMetaService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/DynamicPreCoreService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/HcModelCoreTaskService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/HcModelCoreTaskService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/HcModelService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/HcModelService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/HcModelShareService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/HcModelShareService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/HcTableService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/HcTableService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/SqlCreatorService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/SqlCreatorService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/SysRolePermissionService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/SysRolePermissionService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/SysUserRoleService.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/SysUserRoleService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/DBMetaServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/DynamicPreCoreServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/HcModelCoreTaskServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/HcModelCoreTaskServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/HcModelServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/HcModelServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/HcModelShareServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/HcModelShareServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/HcTableServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/HcTableServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/HcThemeServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/HcThemeServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/SqlCreatorServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/SqlCreatorServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/SysRolePermissionServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/SysRolePermissionServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/SysUserRoleServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/SysUserRoleServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/SysUserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/SysUserServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/ModuleColumnFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/ModuleColumnFilter.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/TaskBuild.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/TaskBuild.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/CalcType.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/CalcType.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/ConfKeys.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/ConfKeys.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/CalcBuilder.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/CalcBuilder.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/model/CalcModeBase.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/model/CalcModeBase.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/model/ModeAggregation.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/logical/model/ModeAggregation.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/model/Node.java" afterPath="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/model/Node.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DBMetaMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DBMetaMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/DynamicPreCoreMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/DynamicPreCoreMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/HcModelMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/HcModelMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/HcModelShareMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/HcModelShareMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/HcThemeMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/HcThemeMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysFilterChainMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysFilterChainMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysRoleMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysRoleMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysUserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysUserMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SysUserRoleMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysUserRoleMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/bootstrap.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bootstrap.properties" afterPath="$PROJECT_DIR$/target/classes/bootstrap.properties" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/config/shiro/ShiroRealm.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/config/shiro/ShiroRealm.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/Boot.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/Boot.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/cloud/TestEureka.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/cloud/TestEureka.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/hc/DBMetaController.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/hc/DBMetaController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/hc/HcModelController.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/hc/HcModelController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/hc/HcModelShareController.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/hc/HcModelShareController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/hc/HcTableController.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/hc/HcTableController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/hc/task/CoreTaskController.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/hc/task/CoreTaskController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/hc/task/PreTaskController.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/hc/task/PreTaskController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/shiro/AuthzCRUD.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/controller/shiro/AuthzCRUD.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/entity/HcModelShare.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/entity/HcModelShare.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/entity/SysUser.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/entity/SysUser.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/mapper/DynamicCoreMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/mapper/DynamicCoreMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/mapper/HcModelMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/mapper/HcModelMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/mapper/HcModelShareMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/mapper/HcModelShareMapper.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/DBMetaService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/DynamicPreCoreService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/HcModelCoreTaskService.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/HcModelCoreTaskService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/HcModelService.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/HcModelService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/HcModelShareService.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/HcModelShareService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/HcTableService.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/HcTableService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/SqlCreatorService.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/SqlCreatorService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/SysRolePermissionService.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/SysRolePermissionService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/SysUserRoleService.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/SysUserRoleService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/DBMetaServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/DynamicPreCoreServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/HcModelCoreTaskServiceImpl$MODEL_TYPE.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/HcModelCoreTaskServiceImpl$MODEL_TYPE.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/HcModelCoreTaskServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/HcModelCoreTaskServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/HcModelServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/HcModelServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/HcModelShareServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/HcModelShareServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/HcTableServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/HcTableServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/HcThemeServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/HcThemeServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/SqlCreatorServiceImpl$SimpleResult.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/SqlCreatorServiceImpl$SimpleResult.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/SqlCreatorServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/SqlCreatorServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/SysRolePermissionServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/SysRolePermissionServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/SysUserRoleServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/SysUserRoleServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/SysUserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/service/impl/SysUserServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/ModuleColumnFilter$BadFilterException.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/ModuleColumnFilter$BadFilterException.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/ModuleColumnFilter$FilterModel.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/ModuleColumnFilter$FilterModel.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/ModuleColumnFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/ModuleColumnFilter.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/TaskBuild.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/TaskBuild.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/CalcType.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/CalcType.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/ConfKeys.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/ConfKeys.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/logical/CalcBuilder.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/logical/CalcBuilder.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/logical/model/CalcModeBase.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/logical/model/CalcModeBase.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/logical/model/ModeAggregation$1.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/logical/model/ModeAggregation$1.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/logical/model/ModeAggregation$Type.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/logical/model/ModeAggregation$Type.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/logical/model/ModeAggregation.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/common/logical/model/ModeAggregation.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/model/Node.class" afterPath="$PROJECT_DIR$/target/classes/com/jsen/test/utils/modelcore/model/Node.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" afterPath="$PROJECT_DIR$/target/classes/logback.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DBMetaMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/DBMetaMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/DynamicPreCoreMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/DynamicPreCoreMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/HcModelMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/HcModelMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/HcModelShareMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/HcModelShareMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/HcThemeMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/HcThemeMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysFilterChainMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/SysFilterChainMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysRoleMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/SysRoleMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysUserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/SysUserMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/SysUserRoleMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/SysUserRoleMapper.xml" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/target/mbpT-1.0-SNAPSHOT.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/mbpT-1.0-SNAPSHOT.jar.original" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/mbpT-1.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/mbpT-1.0.1-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/target/mbpT-1.0.1-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/mbpT-1.0.1-SNAPSHOT.jar.original" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -154,128 +28,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HcThemeServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/HcThemeServiceImpl.java">
+      <file leaf-file-name="Boot.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/Boot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="98" column="37" lean-forward="false" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
+            <state relative-caret-position="195">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthzCRUD.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/shiro/AuthzCRUD.java">
+      <file leaf-file-name="DBMetaController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/DBMetaController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1124">
-              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysRoleServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/SysRoleServiceImpl.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-179">
-              <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysRoleMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SysRoleMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding>
-                <marker date="1524734693000" expanded="true" signature="1281:1344" ph="INSERT INTO sys_role... " />
-                <marker date="1524734693000" expanded="true" signature="1430:1472" ph="DELETE FROM sys_role... " />
-                <marker date="1524734693000" expanded="true" signature="1558:1580" ph="SELECT * FRO... sys_role" />
-                <marker date="1524734693000" expanded="true" signature="1656:1678" ph="SELECT * FRO... sys_role" />
-                <marker date="1524734693000" expanded="true" signature="1761:1790" ph="SELECT COUNT... sys_role" />
-                <marker date="1524734693000" expanded="true" signature="1923:1975" ph="SELECT * FRO... sys_role" />
-                <marker date="1524734693000" expanded="true" signature="2105:2144" ph="SELECT * FRO... sys_role" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScsWorkServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/scs/ScsWorkServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskBuild.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/TaskBuild.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysRolePermissionMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SysRolePermissionMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-              <folding>
-                <marker date="1523329766000" expanded="true" signature="682:772" ph="INSERT INTO sys_role_permission... " />
-                <marker date="1523329766000" expanded="true" signature="892:971" ph="DELETE FROM sys_role_permission... " />
-                <marker date="1523329766000" expanded="true" signature="1075:1128" ph="DELETE FROM sys_role_permission... " />
-                <marker date="1523329766000" expanded="true" signature="1230:1289" ph="DELETE FROM sys_role_permission... " />
-                <marker date="1523329766000" expanded="true" signature="1433:1585" ph="SELECT sp.id... sys_role_permission" />
-                <marker date="1523329766000" expanded="true" signature="1725:1818" ph="SELECT * fro... sys_role_permission" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysRoleAuthorityMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SysRoleAuthorityMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HcThemeMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/HcThemeMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="41" />
-              <folding>
-                <marker date="1524730923000" expanded="true" signature="830:852" ph="SELECT * FRO... hc_theme" />
-                <marker date="1524730923000" expanded="true" signature="907:968" ph="INSERT INTO hc_theme... " />
-                <marker date="1524730923000" expanded="true" signature="1026:1104" ph="INSERT INTO hc_theme... " />
-                <marker date="1524730923000" expanded="true" signature="1187:1227" ph="SELECT COUNT... hc_theme" />
-                <marker date="1524730923000" expanded="true" signature="1335:1426" ph="DELETE FROM hc_theme_table... " />
-                <marker date="1524730923000" expanded="true" signature="1381:1425" ph="SELECT id FR... hc_theme" />
-                <marker date="1524730923000" expanded="true" signature="1528:1577" ph="DELETE FROM hc_theme_table... " />
-                <marker date="1524730923000" expanded="true" signature="1675:1716" ph="DELETE FROM hc_theme... " />
-                <marker date="1524730923000" expanded="true" signature="1808:1845" ph="DELETE FROM hc_theme... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HcThemeMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/HcThemeMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+            <state relative-caret-position="294">
+              <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -342,10 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/HcTableController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/shiro/AuthzCRUD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/SqlCreatorService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/SqlCreatorServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jsen/test/JSONArrayTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/common/ConfKeys.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/model/Node.java" />
@@ -377,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/DBMetaServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/DynamicPreCoreServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/DynamicPreCoreService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/DBMetaController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/task/PreTaskController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/ScsWorkService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/scs/ScsWorkServiceImpl.java" />
@@ -393,6 +165,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/SysRolePermissionMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/SysRoleMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/TaskBuild.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/cloud/TestEureka.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/service/EurekaTestService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/Boot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/DBMetaController.java" />
       </list>
     </option>
   </component>
@@ -426,6 +203,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -476,6 +255,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="hc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -496,53 +285,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="sys" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -550,110 +292,13 @@
               <item name="MbpT" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="modelcore" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="modelcore" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="modelcore" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="logical" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="modelcore" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="logical" type="462c0819:PsiDirectoryNode" />
-              <item name="builder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="modelcore" type="462c0819:PsiDirectoryNode" />
-              <item name="help" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="modelcore" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MbpT" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MbpT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1065,6 +710,8 @@
       <workItem from="1524634411864" duration="8732000" />
       <workItem from="1524702424172" duration="10352000" />
       <workItem from="1524720790826" duration="9106000" />
+      <workItem from="1524789834325" duration="5922000" />
+      <workItem from="1524807164852" duration="3299000" />
     </task>
     <servers />
   </component>
@@ -1101,10 +748,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="384058000" />
+    <option name="totallyTimeSpent" value="393279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="984" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40611354" sideWeight="0.2375" order="7" side_tool="true" content_ui="tabs" />
@@ -1122,10 +770,10 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4122807" sideWeight="0.7625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25767544" sideWeight="0.7625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969433" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32785088" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32785088" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -1153,48 +801,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/HcModelShareMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/HcModelService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/HcModelMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SysAuthorityMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SysFilterChainMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <marker date="1524709208000" expanded="true" signature="642:690" ph="SELECT * FRO... sys_filter_chain" />
-            <marker date="1524709208000" expanded="true" signature="797:881" ph="INSERT INTO sys_filter_chain... " />
-            <marker date="1524709208000" expanded="true" signature="968:1014" ph="DELETE FROM sys_filter_chain... " />
-            <marker date="1524709208000" expanded="true" signature="1130:1186" ph="SELECT * FRO... sys_filter_chain" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1202,15 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1523930617000" expanded="true" signature="760:820" ph="INSERT INTO sys_permission... " />
-            <marker date="1523930617000" expanded="true" signature="912:963" ph="DELETE FROM sys_permission... " />
-            <marker date="1523930617000" expanded="true" signature="1062:1107" ph="SELECT * FRO... sys_permission" />
-            <marker date="1523930617000" expanded="true" signature="1205:1250" ph="SELECT * FRO... sys_permission" />
-            <marker date="1523930617000" expanded="true" signature="1339:1374" ph="SELECT COUNT... sys_permission" />
-            <marker date="1523930617000" expanded="true" signature="1524:1585" ph="SELECT * FRO... sys_permission" />
-            <marker date="1523930617000" expanded="true" signature="1727:1772" ph="SELECT * FRO... sys_permission" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1218,15 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <marker date="1524709208000" expanded="true" signature="623:695" ph="INSERT INTO sys_user_role... " />
-            <marker date="1524709208000" expanded="true" signature="790:832" ph="DELETE FROM sys_user_role... " />
-            <marker date="1524709208000" expanded="true" signature="928:975" ph="DELETE FROM sys_user_role... " />
-            <marker date="1524709208000" expanded="true" signature="1071:1118" ph="DELETE FROM sys_user_role... " />
-            <marker date="1524709208000" expanded="true" signature="1226:1293" ph="DELETE FROM sys_user_role... " />
-            <marker date="1524709208000" expanded="true" signature="1426:1567" ph="SELECT sr.id... sys_user_role" />
-            <marker date="1524709208000" expanded="true" signature="1689:1770" ph="SELECT * fro... sys_user_role" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1234,7 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
           <caret line="49" column="19" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1242,7 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1250,18 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-19">
           <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="18" selection-end-column="46" />
-          <folding>
-            <marker date="1524711738000" expanded="true" signature="1166:1277" ph="SELECT * FRO... sys_role" />
-            <marker date="1524711738000" expanded="true" signature="1209:1276" ph="SELECT sur.r... sys_user_role" />
-            <marker date="1524711738000" expanded="true" signature="1389:1517" ph="SELECT * FRO... sys_permission" />
-            <marker date="1524711738000" expanded="true" signature="1437:1516" ph="SELECT srp.p... sys_role_permission" />
-            <marker date="1524711738000" expanded="true" signature="1615:1680" ph="INSERT INTO sys_user... " />
-            <marker date="1524711738000" expanded="true" signature="1766:1805" ph="DELETE FROM sys_user... " />
-            <marker date="1524711738000" expanded="true" signature="1885:1907" ph="SELECT * FRO... sys_user" />
-            <marker date="1524711738000" expanded="true" signature="2038:2087" ph="SELECT * FRO... sys_user" />
-            <marker date="1524711738000" expanded="true" signature="2217:2256" ph="SELECT * FRO... sys_user" />
-            <marker date="1524711738000" expanded="true" signature="2339:2368" ph="SELECT COUNT... sys_user" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1269,7 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1277,7 +854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1125">
           <caret line="91" column="174" lean-forward="false" selection-start-line="91" selection-start-column="174" selection-end-line="91" selection-end-column="174" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1285,7 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1293,9 +868,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1524622507000" expanded="true" signature="368:404" ph="DROP VIEW IF... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1303,18 +875,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-          <folding>
-            <marker date="1524708839000" expanded="true" signature="792:894" ph="INSERT INTO hc_model... " />
-            <marker date="1524708839000" expanded="true" signature="993:1221" ph="UPDATE hc_model... " />
-            <marker date="1524708839000" expanded="true" signature="1318:1360" ph="DELETE FROM hc_model... " />
-            <marker date="1524708839000" expanded="true" signature="1446:1490" ph="SELECT * FRO... hc_model" />
-            <marker date="1524708839000" expanded="true" signature="1589:1628" ph="SELECT * FRO... hc_model" />
-            <marker date="1524708839000" expanded="true" signature="1589:1648" ph="SELECT * FRO... hc_model" />
-            <marker date="1524708839000" expanded="true" signature="1765:1806" ph="SELECT * FRO... hc_model" />
-            <marker date="1524708839000" expanded="true" signature="1891:1940" ph="SELECT COUNT... hc_model" />
-            <marker date="1524708839000" expanded="true" signature="2026:2074" ph="SELECT model... hc_model" />
-            <marker date="1524708839000" expanded="true" signature="2171:2222" ph="UPDATE hc_model... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1322,7 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1330,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="31" column="60" lean-forward="false" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1338,7 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1346,9 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
           <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="31" />
-          <folding>
-            <marker date="1524725386000" expanded="true" signature="1296:1405" ph="SELECT TABLE... TABLES" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1356,7 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1364,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1372,61 +924,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
           <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/DBMetaServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/DBMetaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/DBMetaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#741#742#0" expanded="false" />
-            <element signature="e#797#798#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/DynamicPreCoreServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="58" lean-forward="true" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/DynamicPreCoreService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/DBMetaServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/DBMetaService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/DynamicPreCoreServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/DynamicPreCoreService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/task/PreTaskController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1434,9 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="19" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1444,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1452,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1460,9 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="164" column="7" lean-forward="false" selection-start-line="164" selection-start-column="5" selection-end-line="164" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1470,7 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1478,7 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="34" column="72" lean-forward="true" selection-start-line="34" selection-start-column="72" selection-end-line="34" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1486,7 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1494,7 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="167" column="20" lean-forward="false" selection-start-line="167" selection-start-column="20" selection-end-line="167" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1502,14 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="48" lean-forward="true" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-          <folding>
-            <marker date="1524728029000" expanded="true" signature="599:660" ph="INSERT INTO hc_model_great... " />
-            <marker date="1524728029000" expanded="true" signature="787:849" ph="SELECT * FRO... hc_model_great" />
-            <marker date="1524728029000" expanded="true" signature="965:1012" ph="SELECT * FRO... hc_model_great" />
-            <marker date="1524728029000" expanded="true" signature="1115:1175" ph="DELETE FROM hc_model_greate... " />
-            <marker date="1524728029000" expanded="true" signature="1268:1301" ph="DELETE FROM hc_model_great... " />
-            <marker date="1524728029000" expanded="true" signature="1268:1312" ph="DELETE FROM hc_model_great... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1517,7 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1525,9 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="107" column="90" lean-forward="false" selection-start-line="107" selection-start-column="90" selection-end-line="107" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1535,64 +1019,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
           <caret line="54" column="42" lean-forward="false" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/mapper/HcThemeMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="450">
           <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/HcThemeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
+        <state relative-caret-position="510">
           <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="41" />
-          <folding>
-            <marker date="1524730923000" expanded="true" signature="830:852" ph="SELECT * FRO... hc_theme" />
-            <marker date="1524730923000" expanded="true" signature="907:968" ph="INSERT INTO hc_theme... " />
-            <marker date="1524730923000" expanded="true" signature="1026:1104" ph="INSERT INTO hc_theme... " />
-            <marker date="1524730923000" expanded="true" signature="1187:1227" ph="SELECT COUNT... hc_theme" />
-            <marker date="1524730923000" expanded="true" signature="1335:1426" ph="DELETE FROM hc_theme_table... " />
-            <marker date="1524730923000" expanded="true" signature="1381:1425" ph="SELECT id FR... hc_theme" />
-            <marker date="1524730923000" expanded="true" signature="1528:1577" ph="DELETE FROM hc_theme_table... " />
-            <marker date="1524730923000" expanded="true" signature="1675:1716" ph="DELETE FROM hc_theme... " />
-            <marker date="1524730923000" expanded="true" signature="1808:1845" ph="DELETE FROM hc_theme... " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/HcThemeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
+        <state relative-caret-position="1260">
           <caret line="98" column="37" lean-forward="false" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/shiro/AuthzCRUD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1124">
+        <state relative-caret-position="210">
           <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar!/org/apache/http/impl/conn/PoolingHttpClientConnectionManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="280" column="30" lean-forward="true" selection-start-line="280" selection-start-column="30" selection-end-line="280" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/EurekaTestService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/cloud/TestEureka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#1704#1705#0" expanded="false" />
+            <element signature="e#1759#1760#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/TaskBuild.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/scs/ScsWorkServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SysRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1524734693000" expanded="true" signature="1281:1344" ph="INSERT INTO sys_role... " />
+            <marker date="1524734693000" expanded="true" signature="1430:1472" ph="DELETE FROM sys_role... " />
+            <marker date="1524734693000" expanded="true" signature="1558:1580" ph="SELECT * FRO... sys_role" />
+            <marker date="1524734693000" expanded="true" signature="1656:1678" ph="SELECT * FRO... sys_role" />
+            <marker date="1524734693000" expanded="true" signature="1761:1790" ph="SELECT COUNT... sys_role" />
+            <marker date="1524734693000" expanded="true" signature="1923:1975" ph="SELECT * FRO... sys_role" />
+            <marker date="1524734693000" expanded="true" signature="2105:2144" ph="SELECT * FRO... sys_role" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/SysRoleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-179">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SysRoleAuthorityMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1612,44 +1135,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SysRoleMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/SysRoleAuthorityMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <marker date="1524734693000" expanded="true" signature="1281:1344" ph="INSERT INTO sys_role... " />
-            <marker date="1524734693000" expanded="true" signature="1430:1472" ph="DELETE FROM sys_role... " />
-            <marker date="1524734693000" expanded="true" signature="1558:1580" ph="SELECT * FRO... sys_role" />
-            <marker date="1524734693000" expanded="true" signature="1656:1678" ph="SELECT * FRO... sys_role" />
-            <marker date="1524734693000" expanded="true" signature="1761:1790" ph="SELECT COUNT... sys_role" />
-            <marker date="1524734693000" expanded="true" signature="1923:1975" ph="SELECT * FRO... sys_role" />
-            <marker date="1524734693000" expanded="true" signature="2105:2144" ph="SELECT * FRO... sys_role" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar!/org/apache/http/impl/conn/PoolingHttpClientConnectionManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="280" column="30" lean-forward="true" selection-start-line="280" selection-start-column="30" selection-end-line="280" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/service/impl/scs/ScsWorkServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="294">
+          <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="21" selection-end-line="74" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/utils/modelcore/TaskBuild.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/Boot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jsen/test/controller/hc/DBMetaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
